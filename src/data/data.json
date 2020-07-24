@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "gif": "url('../assets/squat-jumps.gif')",
+        "name": "Squat Jumps",
+        "description": "Feet shoulder-width apart. Squat with knees behind toes, jump up, return to squat and repeat",
+        "modified": "Slight squat and smaller jump",
+        "focus": "cardio, lower-body"
+    },
+    {
+        "id": 2,
+        "gif": "url('')",
+        "name": "",
+        "description": "",
+        "modified": "",
+        "focus": ""
+    }
+]
