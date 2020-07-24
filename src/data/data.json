@@ -175,12 +175,30 @@
     },
     {
         "id": 17,
-        "gif": "src/assets/knee-to-elbow-plank.webp",
+        "gif": "../assets/knee-to-elbow-plank.webp",
         "name": "Knee to Elbow Plank",
         "description": "Plank with forearms on ground, alternate bringing knee towards same-side elbow, medium pace and controlled",
         "modified": "Do not exaggerate knee to elbow movement",
         "focus": [
             "core"
         ]
+    },
+    {
+        "id": 18,
+        "gif": "../assets/toe-touchers.webp",
+        "name": "Toe Touchers",
+        "description": "Lying on back with legs extended straight up, reach up with hands and touch your toes, repeat for duration of round",
+        "modified": "Reach up with hands, but don't try and touch toes",
+        "focus": [
+            "core"
+        ]
+    },
+    {
+        "id": 1,
+        "gif": "",
+        "name": "",
+        "description": "",
+        "modified": "",
+        "focus": []
     }
 ]
