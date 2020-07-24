@@ -314,5 +314,15 @@
         "focus": [
             "lower-body"
         ]
+    },
+    {
+        "id": 31,
+        "gif": "../assets/rock-the-boat.gif",
+        "name": "Rock the Boat",
+        "description": "Lying on your back, hands outstretched over your head, legs raised straight off the ground, rock back and forth using your core to stabilize",
+        "modified": "Place your arms down by your side to help stabilize you",
+        "focus": [
+            "core"
+        ]
     }
 ]
