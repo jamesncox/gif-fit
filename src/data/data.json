@@ -51,7 +51,8 @@
         "modified": "Decrease speed, lower range of motion",
         "focus": [
             "cardio",
-            "lower-body"
+            "lower-body",
+            "core"
         ]
     },
     {
@@ -116,7 +117,8 @@
         "description": "Perform a push-up, slow and controlled, lowering body until chest touches ground, and mainting good form the entire time",
         "modified": "Perform push-up keeping knees on the ground",
         "focus": [
-            "upper-body"
+            "upper-body",
+            "core"
         ]
     },
     {
@@ -126,7 +128,8 @@
         "description": "Hands directly underneath shoulders, elbows pointing back, perform push, lowering body the ground",
         "modified": "Perform push-up keeping knees on the ground",
         "focus": [
-            "upper-body"
+            "upper-body",
+            "core"
         ]
     },
     {
@@ -135,6 +138,27 @@
         "name": "Squat Hold",
         "description": "Feet shoulder width apart, knees behind toes, perform squat and hold for duration of the round",
         "modified": "Perform less deep squat",
+        "focus": [
+            "lower-body"
+        ]
+    },
+    {
+        "id": 14,
+        "gif": "../assets/toe-touch-pushup.webp",
+        "name": "Toe Touch Push-up",
+        "description": "Perform push-up, then tap right toe followed by left toe",
+        "modified": "Perform push-up and toe taps with knees on ground",
+        "focus": [
+            "upper-body",
+            "core"
+        ]
+    },
+    {
+        "id": 15,
+        "gif": "../assets/alternating-forward-lunges.webp",
+        "name": "Alternating Forward Lunges",
+        "description": "Lunge forward with right leg, keeping knee behind toe, stand back up, and lunge with left leg. Repeat",
+        "modified": "Hold onto wall or something stable for balance",
         "focus": [
             "lower-body"
         ]
