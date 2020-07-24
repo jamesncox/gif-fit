@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "gif": "url('/assets/squat-jumps.gif')",
+        "gif": "../assets/squat-jumps.gif",
         "name": "Squat Jumps",
         "description": "Feet shoulder-width apart. Squat with knees behind toes, jump up, return to squat and repeat",
         "modified": "Slight squat and smaller jump",
@@ -12,7 +12,7 @@
     },
     {
         "id": 2,
-        "gif": "url('/assets/burpees.webp')",
+        "gif": "../assets/burpees.webp",
         "name": "Burpees",
         "description": "Lower body to ground all the way, as you perform a push-up, jump up straight. Repeat.",
         "modified": "Lift up from ground without push-up, less intense jump",
@@ -24,7 +24,7 @@
     },
     {
         "id": 3,
-        "gif": "url('/assets/split-squat-jumps.webp')",
+        "gif": "../assets/split-squat-jumps.webp",
         "name": "Split Squat Jumps",
         "description": "Alternate legs as you jump into a lunge and switch feet after each jump",
         "modified": "Step into each lunge instead of jumping",
@@ -35,7 +35,7 @@
     },
     {
         "id": 4,
-        "gif": "url('/assets/hand-release-pusups.gif')",
+        "gif": "../assets/hand-release-pusups.gif",
         "name": "Hand-release Push-ups",
         "description": "In push-up position, lower body all the way to the ground, lift hands off ground, then perform push-up",
         "modified": "Lower body to ground, do not lift hands up",
@@ -45,7 +45,7 @@
     },
     {
         "id": 5,
-        "gif": "url('/assets/mountain-climbers.webp')",
+        "gif": "../assets/mountain-climbers.webp",
         "name": "Mountain Climbers",
         "description": "In a plank, quickly bring knees to chest, alternating legs",
         "modified": "Decrease speed, lower range of motion",
