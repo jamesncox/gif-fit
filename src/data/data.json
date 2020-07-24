@@ -53,5 +53,16 @@
             "cardio",
             "lower-body"
         ]
+    },
+    {
+        "id": 6,
+        "gif": "../assets/jump-knee-tucks.webp",
+        "name": "Jump Knee Tucks",
+        "description": "Jump up and bring knees as high to chest as possible. Repeat quickly",
+        "modified": "Jump lower, bringing knees up less high and jump slower",
+        "focus": [
+            "cardio",
+            "lower-body"
+        ]
     }
 ]
