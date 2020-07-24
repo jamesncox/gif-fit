@@ -5,14 +5,32 @@
         "name": "Squat Jumps",
         "description": "Feet shoulder-width apart. Squat with knees behind toes, jump up, return to squat and repeat",
         "modified": "Slight squat and smaller jump",
-        "focus": "cardio, lower-body"
+        "focus": [
+            "cardio",
+            "lower-body"
+        ]
     },
     {
         "id": 2,
-        "gif": "url('')",
-        "name": "",
-        "description": "",
-        "modified": "",
-        "focus": ""
+        "gif": "url('../assets/burpees.webp')",
+        "name": "Burpees",
+        "description": "Lower body to ground all the way, as you perform a push-up, jump up straight. Repeat.",
+        "modified": "Lift up from ground without push-up, less intense jump",
+        "focus": [
+            "cardio",
+            "upper-body",
+            "lower-body"
+        ]
+    },
+    {
+        "id": 3,
+        "gif": "url('../assets/split-squat-jumps.webp')",
+        "name": "Split Squat Jumps",
+        "description": "Alternate legs as you jump into a lunge and switch feet after each jump",
+        "modified": "Step into each lunge instead of jumping",
+        "focus": [
+            "cardio",
+            "lower-body"
+        ]
     }
 ]
