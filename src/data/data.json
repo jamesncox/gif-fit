@@ -108,5 +108,15 @@
             "cardio",
             "lower-body"
         ]
+    },
+    {
+        "id": 1,
+        "gif": "../assets/controlled-pushup.webp",
+        "name": "Controlled Push-ups",
+        "description": "Perform a push-up, slow and controlled, lowering body until chest touches ground, and mainting good form the entire time",
+        "modified": "Slowly lower body to ground, rest on ground for a moment, then slowly come back up",
+        "focus": [
+            "upper-body"
+        ]
     }
 ]
