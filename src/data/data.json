@@ -243,5 +243,15 @@
         "focus": [
             "core"
         ]
+    },
+    {
+        "id": 24,
+        "gif": "../assets/plank-jacks.webp",
+        "name": "Plank Jacks",
+        "description": "Plank with forearms on ground, jump toes out then in in a jumping-jack style motion",
+        "modified": "In the plank, step toes out and in one at a time, lower range of motion",
+        "focus": [
+            "core"
+        ]
     }
 ]
