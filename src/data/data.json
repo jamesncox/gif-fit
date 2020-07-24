@@ -335,5 +335,15 @@
             "cardio",
             "lower-body"
         ]
+    },
+    {
+        "id": 33,
+        "gif": "../assets/pike-press.gif",
+        "name": "Pike Press",
+        "description": "Place hands and feet on ground, walk hands up towards feet until hips are bent, lower head towards ground until head lightly touches ground, push back up",
+        "modified": "Lessen the angle of your hips and don't lower head all the way to the ground",
+        "focus": [
+            "upper-body"
+        ]
     }
 ]
