@@ -283,5 +283,15 @@
         "focus": [
             "core"
         ]
+    },
+    {
+        "id": 28,
+        "gif": "../assets/jumping-jacks.gif",
+        "name": "Jumping Jacks",
+        "description": "With hands by side, feet together, quickly jump and bring hands up while landing in a wide stance, then hands back down and feet together",
+        "modified": "Lower the pace of each jump",
+        "focus": [
+            "cardio"
+        ]
     }
 ]
