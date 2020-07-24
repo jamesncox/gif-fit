@@ -223,5 +223,15 @@
             "core",
             "upper-body"
         ]
+    },
+    {
+        "id": 22,
+        "gif": "../assets/plank-crossbody-hold.webp",
+        "name": "Cross-body Plank with Hold",
+        "description": "Hands on floor plank, reach under opposite arm, touch body and hold, repeat on other side",
+        "modified": "Perform plank and hold with knees touching ground",
+        "focus": [
+            "core"
+        ]
     }
 ]
