@@ -324,5 +324,16 @@
         "focus": [
             "core"
         ]
+    },
+    {
+        "id": 32,
+        "gif": "../assets/wide-stance-jump-squat.gif",
+        "name": "Wide Stance Jump Squats",
+        "description": "With feet together jump into a squat landing with feet in a wide stance, jump back up feet together again",
+        "modified": "Narrow stance of feet and depth of squat",
+        "focus": [
+            "cardio",
+            "lower-body"
+        ]
     }
 ]
