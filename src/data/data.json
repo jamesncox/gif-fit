@@ -125,6 +125,18 @@
         "name": "Military Push-ups",
         "description": "Hands directly underneath shoulders, elbows pointing back, perform push, lowering body the ground",
         "modified": "Perform push-up keeping knees on the ground",
-        "focus": []
+        "focus": [
+            "upper-body"
+        ]
+    },
+    {
+        "id": 13,
+        "gif": "../assets/squat-hold.gif",
+        "name": "Squat Hold",
+        "description": "Feet shoulder width apart, knees behind toes, perform squat and hold for duration of the round",
+        "modified": "Perform less deep squat",
+        "focus": [
+            "lower-body"
+        ]
     }
 ]
