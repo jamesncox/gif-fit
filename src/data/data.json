@@ -304,5 +304,15 @@
             "cardio",
             "lower-body"
         ]
+    },
+    {
+        "id": 30,
+        "gif": "../assets/lateral-lunges.gif",
+        "name": "Lateral Lunges",
+        "description": "Step left leg out to side and lunge, come back to center, then step right leg out side and lunge, come back to center",
+        "modified": "Take a smaller step to the side with a less exaggerated lunge",
+        "focus": [
+            "lower-body"
+        ]
     }
 ]
