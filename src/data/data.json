@@ -194,11 +194,13 @@
         ]
     },
     {
-        "id": 1,
-        "gif": "",
-        "name": "",
-        "description": "",
-        "modified": "",
-        "focus": []
+        "id": 19,
+        "gif": "../assets/superman.gif",
+        "name": "Superman",
+        "description": "Lying on your stomach, extend hands straight out, then lift your legs and arms up, keeping stomach on floor, hold for a second, lower and repeat",
+        "modified": "Do not exaggerate arm and leg extension",
+        "focus": [
+            "core"
+        ]
     }
 ]
