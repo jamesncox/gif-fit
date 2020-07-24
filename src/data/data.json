@@ -233,5 +233,15 @@
         "focus": [
             "core"
         ]
+    },
+    {
+        "id": 23,
+        "gif": "../assets/half-plank-shoulder-touch.webp",
+        "name": "Half Plank Shoulder Touch",
+        "description": "With hands on feet on ground, touch right shoulder with left hand, and then left shoulder with right hand",
+        "modified": "Slightly lift left then right hand off the floor. Don't touch shoulders",
+        "focus": [
+            "core"
+        ]
     }
 ]
