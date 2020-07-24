@@ -32,5 +32,15 @@
             "cardio",
             "lower-body"
         ]
+    },
+    {
+        "id": 4,
+        "gif": "url('../assets/hand-release-pusups.gif')",
+        "name": "Hand-release Push-ups",
+        "description": "In push-up position, lower body all the way to the ground, lift hands off ground, then perform push-up",
+        "modified": "Lower body to ground, do not lift hands up",
+        "focus": [
+            "upper-body"
+        ]
     }
 ]
