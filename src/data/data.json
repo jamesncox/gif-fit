@@ -174,11 +174,13 @@
         ]
     },
     {
-        "id": 1,
-        "gif": "",
-        "name": "",
-        "description": "",
-        "modified": "",
-        "focus": []
+        "id": 17,
+        "gif": "src/assets/knee-to-elbow-plank.webp",
+        "name": "Knee to Elbow Plank",
+        "description": "Plank with forearms on ground, alternate bringing knee towards same-side elbow, medium pace and controlled",
+        "modified": "Do not exaggerate knee to elbow movement",
+        "focus": [
+            "core"
+        ]
     }
 ]
