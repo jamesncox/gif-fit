@@ -293,5 +293,16 @@
         "focus": [
             "cardio"
         ]
+    },
+    {
+        "id": 29,
+        "gif": "../assets/180-squat-jump.gif",
+        "name": "180 Squat Jumps",
+        "description": "Perform squat and as you jump, rotate 180 degrees to face the opposite direction, landing in a squat, and jump back the opposite direction",
+        "modified": "Do not exaggerate the squat as deeply",
+        "focus": [
+            "cardio",
+            "lower-body"
+        ]
     }
 ]
