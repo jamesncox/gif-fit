@@ -86,5 +86,16 @@
             "cardio",
             "lower-body"
         ]
+    },
+    {
+        "id": 9,
+        "gif": "../assets/modified-burpee.webp",
+        "name": "Modified burpee",
+        "description": "Jump down, with hands on floor and extend legs behind you, stand back up",
+        "modified": "Place hands on floor and step legs behind you, stand back up",
+        "focus": [
+            "cardio",
+            "lower-body"
+        ]
     }
 ]
