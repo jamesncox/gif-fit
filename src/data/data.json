@@ -162,5 +162,23 @@
         "focus": [
             "lower-body"
         ]
+    },
+    {
+        "id": 16,
+        "gif": "../assets/plank-touch-and-reach.webp",
+        "name": "Plank Touch and Reach",
+        "description": "In a plank, first touch your opposite shoulder, then reach hand up to sky, and come back to plank and do other hand",
+        "modified": "Only touch shoulders, no reach, or only do the reach and do not touch shoulder",
+        "focus": [
+            "core"
+        ]
+    },
+    {
+        "id": 1,
+        "gif": "",
+        "name": "",
+        "description": "",
+        "modified": "",
+        "focus": []
     }
 ]
