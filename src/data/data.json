@@ -212,5 +212,16 @@
         "focus": [
             "core"
         ]
+    },
+    {
+        "id": 21,
+        "gif": "../assets/pushup-plank.gif",
+        "name": "Push-up Plank",
+        "description": "With forearms on floor in a plank, place right hand on floor, then left hand on floor, and walk back down. Repeat for duration of round",
+        "modified": "Perform plank and moves with knees on ground",
+        "focus": [
+            "core",
+            "upper-body"
+        ]
     }
 ]
