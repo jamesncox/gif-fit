@@ -75,5 +75,16 @@
             "cardio",
             "lower-body"
         ]
+    },
+    {
+        "id": 8,
+        "gif": "../assets/jump-squat-overhead-touch.gif",
+        "name": "Jump Squat with Overhead Touch",
+        "description": "Feet shoulder-width apart. Squat with knees behind toes, jump up, touch hands together over your head, return to squat and repeat",
+        "modified": "Slight squat and smaller jump",
+        "focus": [
+            "cardio",
+            "lower-body"
+        ]
     }
 ]
