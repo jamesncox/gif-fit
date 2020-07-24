@@ -97,5 +97,16 @@
             "cardio",
             "lower-body"
         ]
+    },
+    {
+        "id": 10,
+        "gif": "../assets/air-squats.gif",
+        "name": "Air Squats",
+        "description": "Feet shoulder-width apart, quickly squat keeping your back straight, knees behind your feet and stand back up straight",
+        "modified": "Squat less deep and at a slower pace",
+        "focus": [
+            "cardio",
+            "lower-body"
+        ]
     }
 ]
