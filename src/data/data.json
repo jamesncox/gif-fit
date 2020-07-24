@@ -263,5 +263,15 @@
         "focus": [
             "upper-body"
         ]
+    },
+    {
+        "id": 26,
+        "gif": "../assets/wide-grip-pushups.gif",
+        "name": "Wide Grip Push-ups",
+        "description": "Place hands further than shoulder-width apart and lower body til chest touches ground then push body up in explosive movement",
+        "modified": "Peform push-up with knees on the ground",
+        "focus": [
+            "upper-body"
+        ]
     }
 ]
