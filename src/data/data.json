@@ -253,5 +253,15 @@
         "focus": [
             "core"
         ]
+    },
+    {
+        "id": 25,
+        "gif": "../assets/tricep-dips.gif",
+        "name": "Tricep Dips",
+        "description": "Using a stable chair behind you, grab the edge and bend your knees, lower your body with your arms then lift yourself up",
+        "modified": "User a surface higher from the ground to make your dip shorter",
+        "focus": [
+            "upper-body"
+        ]
     }
 ]
