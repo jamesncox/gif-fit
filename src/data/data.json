@@ -64,5 +64,16 @@
             "cardio",
             "lower-body"
         ]
+    },
+    {
+        "id": 7,
+        "gif": "../assets/high-knees.webp",
+        "name": "High Knees",
+        "description": "Run in place, bringing knees up to your waist line",
+        "modified": "Run slower, bringing knees up less high",
+        "focus": [
+            "cardio",
+            "lower-body"
+        ]
     }
 ]
