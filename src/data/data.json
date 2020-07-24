@@ -273,5 +273,15 @@
         "focus": [
             "upper-body"
         ]
+    },
+    {
+        "id": 27,
+        "gif": "../assets/flutter-kicks.gif",
+        "name": "Flutter Kicks",
+        "description": "Lying on back, head on floor, hands under your hips, raise legs slightly off the ground and quickly move legs in a scissors motion, keeping legs straight and core tight",
+        "modified": "Lower the angle of your legs so they are not as high off the ground",
+        "focus": [
+            "core"
+        ]
     }
 ]
