@@ -42,5 +42,16 @@
         "focus": [
             "upper-body"
         ]
+    },
+    {
+        "id": 5,
+        "gif": "url('../assets/mountain-climbers.webp')",
+        "name": "Mountain Climbers",
+        "description": "In a plank, quickly bring knees to chest, alternating legs",
+        "modified": "Decrease speed, lower range of motion",
+        "focus": [
+            "cardio",
+            "lower-body"
+        ]
     }
 ]
