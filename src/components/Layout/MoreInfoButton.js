@@ -15,15 +15,14 @@ const useStyles = makeStyles((theme) => ({
     subtitle: {
         fontSize: ".8rem",
         fontFamily: "'Exo', sans-serif",
-        color: "#9575cd"
+        color: "#7e57c2"
     },
     icon: {
         marginRight: theme.spacing(1)
     },
     text: {
-        // fontSize: ".8rem",
         fontFamily: "'Exo', sans-serif",
-        color: "#ba68c8",
+        color: "#7e57c2",
         textAlign: "center"
     }
 }));
@@ -66,8 +65,7 @@ export default function MoreInfoButton(props) {
                     </DialogContentText>
                     <DialogContentText id="alert-dialog-description" className={classes.text}>
                         Gif Fit is built around the
-                        Tabata method where you
-                        rest for half the time
+                        Tabata method, resting for half the time
                         you exercise. But you can
                         adjust the rest time
                         to make a workout more
