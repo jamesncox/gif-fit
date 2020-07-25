@@ -1,5 +1,6 @@
 import React from 'react'
 import Title from './Title'
+import Subtitle from './Subtitle'
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -7,8 +8,8 @@ const useStyles = makeStyles((theme) => ({
     root: {
         marginTop: theme.spacing(1),
         display: 'flex',
-        justifyContent: "center",
-        flexWrap: 'wrap',
+        flexDirection: 'column',
+        // justifyContent: "center",
         fontFamily: "'Nanum Pen Script', cursive",
     },
 }));
@@ -20,6 +21,7 @@ function Home(props) {
     return (
         <div className={classes.root}>
             <Title />
+            <Subtitle />
         </div>
     )
 }

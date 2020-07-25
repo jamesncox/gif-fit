@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     title: {
+        alignSelf: "center",
         fontSize: "3rem",
         fontWeight: "bold",
         fontFamily: "'Exo', sans-serif",
