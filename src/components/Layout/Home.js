@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: theme.spacing(1),
         display: 'flex',
         flexDirection: 'column',
-        // justifyContent: "center",
+        justifyContent: "center",
         fontFamily: "'Nanum Pen Script', cursive",
     },
 }));
