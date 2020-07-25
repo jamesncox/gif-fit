@@ -25,10 +25,11 @@ function DisplayTotalTime(props) {
 
     const calculateTotalTime = () => {
         let numberOfExercises = props.numberOfExercises
+        let numberOfRounds = props.numberOfRounds
         let exerciseTime = props.exerciseTime / 1000
         let restTime = props.restTime / 1000
 
-        let totalTime = (exerciseTime + restTime) * numberOfExercises
+        let totalTime = (exerciseTime + restTime) * numberOfExercises * numberOfRounds
         let minutes = Math.floor(totalTime / 60)
         let seconds = totalTime % 60
         let formatted = minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
@@ -50,7 +51,8 @@ function DisplayTotalTime(props) {
 const mapStateToProps = state => ({
     numberOfExercises: state.params.numberOfExercises,
     exerciseTime: state.params.exerciseTime,
-    restTime: state.params.restTime
+    restTime: state.params.restTime,
+    numberOfRounds: state.params.numberOfRounds
 })
 
 export default connect(mapStateToProps)(DisplayTotalTime)

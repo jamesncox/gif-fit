@@ -1,13 +1,15 @@
 import {
     SET_NUMBER_OF_EXERCISES,
     SET_EXERCISE_TIME,
-    SET_REST_TIME
+    SET_REST_TIME,
+    SET_NUMBER_OF_ROUNDS
 } from '../actionTypes'
 
 export default (state = {
     numberOfExercises: null,
     exerciseTime: null,
-    restTime: null
+    restTime: null,
+    numberOfRounds: null
 }, action) => {
     switch (action.type) {
 
@@ -19,6 +21,9 @@ export default (state = {
 
         case SET_REST_TIME:
             return { ...state, restTime: action.payload }
+
+        case SET_NUMBER_OF_ROUNDS:
+            return { ...state, numberOfRounds: action.payload }
 
         default:
             return state
