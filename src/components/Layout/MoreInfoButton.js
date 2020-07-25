@@ -6,6 +6,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -24,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "'Exo', sans-serif",
         color: "#7e57c2",
         textAlign: "center"
+    },
+    link: {
+        color: "#ba68c8"
     }
 }));
 
@@ -52,7 +56,7 @@ export default function MoreInfoButton(props) {
             >
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description" className={classes.text}>
-                        Gif Fit will randomly select
+                        Gif Fit randomly selects
                         exercises you can do right
                         from your home!
                     </DialogContentText>
@@ -65,10 +69,16 @@ export default function MoreInfoButton(props) {
                     </DialogContentText>
                     <DialogContentText id="alert-dialog-description" className={classes.text}>
                         Gif Fit recommends resting for half the time
-                        you exercise (aka the Tabata Method). But you can
-                        choose any rest time
-                        to make a workout more
-                        or less challenging.
+                        you exercise (adhering to the
+                        <Link
+                            className={classes.link}
+                            underline="none"
+                            rel="noopener noreferrer"
+                            href="http://www.tabatatraining.com/tabata-protocol/"
+                            target="_blank"> Tabata Method
+                        </Link>).
+                        But you can choose any rest time
+                        to make a workout more or less challenging.
                     </DialogContentText>
                     <DialogContentText id="alert-dialog-description" className={classes.text}>
                         Good luck and happy fitness!

@@ -20,7 +20,7 @@ export default function Subtitle(props) {
 
     return (
         <Box className={classes.root}>
-            <Typography className={classes.subtitle}>
+            {/* <Typography className={classes.subtitle}>
                 Fit in a quick workout!
             </Typography>
             <Typography className={classes.subtitle}>
@@ -31,6 +31,13 @@ export default function Subtitle(props) {
             </Typography>
             <Typography className={classes.subtitle}>
                 Make sure to warm up first!
+            </Typography> */}
+
+            <Typography className={classes.subtitle}>
+                Customize your workout
+            </Typography>
+            <Typography className={classes.subtitle}>
+                Never repeat the same workout
             </Typography>
         </Box>
     )
