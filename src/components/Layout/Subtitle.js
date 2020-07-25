@@ -5,11 +5,11 @@ import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        marginTop: theme.spacing(2),
+        // marginTop: theme.spacing(1),
         textAlign: "center"
     },
     subtitle: {
-        fontSize: "1.2rem",
+        // fontSize: "1.2rem",
         fontFamily: "'Exo', sans-serif",
         color: "#ba68c8"
     },
@@ -34,10 +34,19 @@ export default function Subtitle(props) {
             </Typography> */}
 
             <Typography className={classes.subtitle}>
-                Customize your workout
+                Customize your workouts
             </Typography>
             <Typography className={classes.subtitle}>
-                Never repeat the same workout
+                Never the same
+            </Typography>
+            <Typography className={classes.subtitle}>
+                No equipment necessary
+            </Typography>
+            <Typography className={classes.subtitle}>
+                (except a water bottle)
+            </Typography>
+            <Typography className={classes.subtitle}>
+                Now let's Gif Fit!
             </Typography>
         </Box>
     )

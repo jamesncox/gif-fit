@@ -33,7 +33,7 @@ export default function StartWorkout() {
     return (
         <div className={classes.root}>
             <ColorButton variant="contained" color="primary" className={classes.button}>
-                Start Workout!
+                Start Workout
             </ColorButton>
         </div>
     );

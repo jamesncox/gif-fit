@@ -50,7 +50,7 @@ function SelectRoundNumber(props) {
     return (
         <div className={classes.root}>
             <Button className={classes.button} onClick={handleOpen}>
-                Select Number of Rounds
+                Choose Number of Rounds
             </Button>
             <FormControl className={classes.formControl}>
                 <Select

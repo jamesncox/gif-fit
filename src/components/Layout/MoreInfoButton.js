@@ -58,7 +58,7 @@ export default function MoreInfoButton(props) {
                     <DialogContentText id="alert-dialog-description" className={classes.text}>
                         Gif Fit randomly selects
                         exercises you can do right
-                        from your home!
+                        from your home.
                     </DialogContentText>
                     <DialogContentText id="alert-dialog-description" className={classes.text}>
                         All you have to do is tell Gif Fit how much time you want to work out.
