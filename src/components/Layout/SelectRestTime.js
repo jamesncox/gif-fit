@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { connect } from 'react-redux'
+import { SET_REST_TIME } from '../../actionTypes'
 import { makeStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
@@ -27,13 +29,14 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function SelectRestTime() {
+function SelectRestTime(props) {
     const classes = useStyles();
-    const [time, setTime] = React.useState('');
-    const [open, setOpen] = React.useState(false);
+    const [time, setTime] = useState('');
+    const [open, setOpen] = useState(false);
 
     const handleChange = (event) => {
         setTime(event.target.value);
+        props.setRestTime(event.target.value)
     };
 
     const handleClose = () => {
@@ -69,3 +72,9 @@ export default function SelectRestTime() {
         </div>
     );
 }
+
+const mapDispatchToProps = dispatch => ({
+    setRestTime: (number) => dispatch({ type: SET_REST_TIME, payload: number })
+})
+
+export default connect(null, mapDispatchToProps)(SelectRestTime)
