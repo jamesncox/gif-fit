@@ -2,6 +2,7 @@ import React from 'react'
 import Title from './Title'
 import Subtitle from './Subtitle'
 import MoreInfoButton from './MoreInfoButton'
+import SelectExercise from './SelectExercise'
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -24,6 +25,7 @@ function Home(props) {
             <Title />
             <Subtitle />
             <MoreInfoButton />
+            <SelectExercise />
         </div>
     )
 }
