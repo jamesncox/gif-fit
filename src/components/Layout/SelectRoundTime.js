@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { connect } from 'react-redux'
+import { SET_EXERCISE_TIME } from '../../actionTypes'
+
 import { makeStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
@@ -27,13 +30,14 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function SelectRoundTime() {
+function SelectRoundTime(props) {
     const classes = useStyles();
-    const [time, setTime] = React.useState('');
-    const [open, setOpen] = React.useState(false);
+    const [time, setTime] = useState('');
+    const [open, setOpen] = useState(false);
 
     const handleChange = (event) => {
-        setTime(event.target.value);
+        setTime(event.target.value)
+        props.setExerciseTime(event.target.value)
     };
 
     const handleClose = () => {
@@ -60,11 +64,17 @@ export default function SelectRoundTime() {
                     onChange={handleChange}
                     autoWidth={true}
                 >
-                    <MenuItem value={30}>30 sec</MenuItem>
-                    <MenuItem value={45}>40 sec</MenuItem>
-                    <MenuItem value={60}>60 sec</MenuItem>
+                    <MenuItem value={30000}>30 sec</MenuItem>
+                    <MenuItem value={45000}>40 sec</MenuItem>
+                    <MenuItem value={60000}>60 sec</MenuItem>
                 </Select>
             </FormControl>
         </div>
     );
 }
+
+const mapDispatchToProps = dispatch => ({
+    setExerciseTime: (number) => dispatch({ type: SET_EXERCISE_TIME, payload: number })
+})
+
+export default connect(null, mapDispatchToProps)(SelectRoundTime)

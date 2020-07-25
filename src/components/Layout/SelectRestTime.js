@@ -63,10 +63,10 @@ function SelectRestTime(props) {
                     onChange={handleChange}
                     autoWidth={true}
                 >
-                    <MenuItem value={10}>10 sec</MenuItem>
-                    <MenuItem value={15}>15 sec</MenuItem>
-                    <MenuItem value={20}>20 sec</MenuItem>
-                    <MenuItem value={30}>30 sec</MenuItem>
+                    <MenuItem value={10000}>10 sec</MenuItem>
+                    <MenuItem value={15000}>15 sec</MenuItem>
+                    <MenuItem value={20000}>20 sec</MenuItem>
+                    <MenuItem value={30000}>30 sec</MenuItem>
                 </Select>
             </FormControl>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux'
 import { makeStyles } from '@material-ui/core/styles';
 import { SET_NUMBER_OF_EXERCISES } from '../../actionTypes'
@@ -31,8 +31,8 @@ const useStyles = makeStyles((theme) => ({
 
 function SelectExerciseNumber(props) {
     const classes = useStyles();
-    const [number, setNumber] = React.useState('');
-    const [open, setOpen] = React.useState(false);
+    const [number, setNumber] = useState('');
+    const [open, setOpen] = useState(false);
 
     const handleChange = (event) => {
         setNumber(event.target.value);
