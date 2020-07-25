@@ -22,18 +22,18 @@ const useStyles = makeStyles((theme) => ({
     formControl: {
         fontFamily: "'Exo', sans-serif",
         alignSelf: "center",
-        width: 50,
+        width: 100,
         textAlign: "center"
     },
 }));
 
-export default function SelectExercise() {
+export default function SelectRoundTime() {
     const classes = useStyles();
-    const [number, setNumber] = React.useState('');
+    const [time, setTime] = React.useState('');
     const [open, setOpen] = React.useState(false);
 
     const handleChange = (event) => {
-        setNumber(event.target.value);
+        setTime(event.target.value);
     };
 
     const handleClose = () => {
@@ -47,7 +47,7 @@ export default function SelectExercise() {
     return (
         <div className={classes.root}>
             <Button className={classes.button} onClick={handleOpen}>
-                Select Number of Exercises
+                Select Length of Rounds
             </Button>
             <FormControl className={classes.formControl}>
                 <Select
@@ -56,21 +56,13 @@ export default function SelectExercise() {
                     open={open}
                     onClose={handleClose}
                     onOpen={handleOpen}
-                    value={number}
+                    value={time}
                     onChange={handleChange}
                     autoWidth={true}
                 >
-                    <MenuItem value={5}>5</MenuItem>
-                    <MenuItem value={6}>6</MenuItem>
-                    <MenuItem value={7}>7</MenuItem>
-                    <MenuItem value={8}>8</MenuItem>
-                    <MenuItem value={9}>9</MenuItem>
-                    <MenuItem value={10}>10</MenuItem>
-                    <MenuItem value={11}>11</MenuItem>
-                    <MenuItem value={12}>12</MenuItem>
-                    <MenuItem value={13}>13</MenuItem>
-                    <MenuItem value={14}>14</MenuItem>
-                    <MenuItem value={15}>15</MenuItem>
+                    <MenuItem value={30}>30 sec</MenuItem>
+                    <MenuItem value={45}>45 sec</MenuItem>
+                    <MenuItem value={60}>60 sec</MenuItem>
                 </Select>
             </FormControl>
         </div>

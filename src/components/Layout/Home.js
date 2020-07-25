@@ -3,6 +3,7 @@ import Title from './Title'
 import Subtitle from './Subtitle'
 import MoreInfoButton from './MoreInfoButton'
 import SelectExercise from './SelectExercise'
+import SelectRoundTime from './SelectRoundTime'
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -26,6 +27,7 @@ function Home(props) {
             <Subtitle />
             <MoreInfoButton />
             <SelectExercise />
+            <SelectRoundTime />
         </div>
     )
 }
