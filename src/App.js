@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Home from './components/Layout/Home'
 
 function App() {
   return (
     <div className="App">
-      <header> Gif Fit</header>
+      <Home />
     </div>
   );
 }
