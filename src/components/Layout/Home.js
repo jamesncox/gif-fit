@@ -3,7 +3,7 @@ import Title from './Title'
 import Subtitle from './Subtitle'
 import MoreInfoButton from './MoreInfoButton'
 import SelectExerciseNumber from './SelectExerciseNumber'
-import SelectRoundTime from './SelectRoundTime'
+import SelectExerciseTime from './SelectExerciseTime'
 import SelectRestTime from './SelectRestTime'
 import StartWorkout from './StartWorkout'
 import DisplayTotalTime from './DisplayTotalTime'
@@ -30,7 +30,7 @@ function Home(props) {
             <Subtitle />
             <MoreInfoButton />
             <SelectExerciseNumber />
-            <SelectRoundTime />
+            <SelectExerciseTime />
             <SelectRestTime />
             <StartWorkout />
             <DisplayTotalTime />

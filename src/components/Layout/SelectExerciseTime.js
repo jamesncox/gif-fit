@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function SelectRoundTime(props) {
+function SelectExerciseTime(props) {
     const classes = useStyles();
     const [time, setTime] = useState('');
     const [open, setOpen] = useState(false);
@@ -77,4 +77,4 @@ const mapDispatchToProps = dispatch => ({
     setExerciseTime: (number) => dispatch({ type: SET_EXERCISE_TIME, payload: number })
 })
 
-export default connect(null, mapDispatchToProps)(SelectRoundTime)
+export default connect(null, mapDispatchToProps)(SelectExerciseTime)
