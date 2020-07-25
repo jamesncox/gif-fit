@@ -1,6 +1,7 @@
 import React from 'react'
 import Title from './Title'
 import Subtitle from './Subtitle'
+import MoreInfoButton from './MoreInfoButton'
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -22,6 +23,7 @@ function Home(props) {
         <div className={classes.root}>
             <Title />
             <Subtitle />
+            <MoreInfoButton />
         </div>
     )
 }
