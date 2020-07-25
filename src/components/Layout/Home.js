@@ -2,7 +2,7 @@ import React from 'react'
 import Title from './Title'
 import Subtitle from './Subtitle'
 import MoreInfoButton from './MoreInfoButton'
-import SelectExercise from './SelectExercise'
+import SelectExerciseNumber from './SelectExerciseNumber'
 import SelectRoundTime from './SelectRoundTime'
 import SelectRestTime from './SelectRestTime'
 import StartWorkout from './StartWorkout'
@@ -28,7 +28,7 @@ function Home(props) {
             <Title />
             <Subtitle />
             <MoreInfoButton />
-            <SelectExercise />
+            <SelectExerciseNumber />
             <SelectRoundTime />
             <SelectRestTime />
             <StartWorkout />

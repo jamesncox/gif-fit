@@ -1,5 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux'
 import { makeStyles } from '@material-ui/core/styles';
+import { SET_NUMBER_OF_EXERCISES } from '../../actionTypes'
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
@@ -27,13 +29,14 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function SelectExercise() {
+function SelectExerciseNumber(props) {
     const classes = useStyles();
     const [number, setNumber] = React.useState('');
     const [open, setOpen] = React.useState(false);
 
     const handleChange = (event) => {
         setNumber(event.target.value);
+        props.setNumberOfExercises(event.target.value)
     };
 
     const handleClose = () => {
@@ -76,3 +79,9 @@ export default function SelectExercise() {
         </div>
     );
 }
+
+const mapDispatchToProps = dispatch => ({
+    setNumberOfExercises: (number) => dispatch({ type: SET_NUMBER_OF_EXERCISES, payload: number })
+})
+
+export default connect(null, mapDispatchToProps)(SelectExerciseNumber)
