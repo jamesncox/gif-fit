@@ -5,6 +5,8 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     title: {
         fontSize: "3rem",
+        fontWeight: "bold",
+        fontFamily: "'Exo', sans-serif",
         top: theme.spacing(1),
         color: "#ba68c8"
     },
@@ -15,7 +17,7 @@ export default function Title(props) {
 
     return (
         <Typography className={classes.title}>
-            Gif Fit
+            GIF FIT
         </Typography>
     )
 
