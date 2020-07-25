@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function SelectRoundTime() {
+export default function SelectRestTime() {
     const classes = useStyles();
     const [time, setTime] = React.useState('');
     const [open, setOpen] = React.useState(false);
@@ -47,7 +47,7 @@ export default function SelectRoundTime() {
     return (
         <div className={classes.root}>
             <Button className={classes.button} onClick={handleOpen}>
-                Choose Exercise Time
+                Select Rest Time
             </Button>
             <FormControl className={classes.formControl}>
                 <Select
@@ -60,9 +60,10 @@ export default function SelectRoundTime() {
                     onChange={handleChange}
                     autoWidth={true}
                 >
+                    <MenuItem value={10}>10 sec</MenuItem>
+                    <MenuItem value={15}>15 sec</MenuItem>
+                    <MenuItem value={20}>20 sec</MenuItem>
                     <MenuItem value={30}>30 sec</MenuItem>
-                    <MenuItem value={45}>40 sec</MenuItem>
-                    <MenuItem value={60}>60 sec</MenuItem>
                 </Select>
             </FormControl>
         </div>
