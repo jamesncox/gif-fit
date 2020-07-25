@@ -57,17 +57,16 @@ export default function MoreInfoButton(props) {
                         from your home!
                     </DialogContentText>
                     <DialogContentText id="alert-dialog-description" className={classes.text}>
-                        Choose a
-                        number of exercises (we
-                        recommend between 8 - 10
-                        to start) and how long you
-                        will perform each exercise.
+                        All you have to do is tell Gif Fit how much time you want to work out.
                     </DialogContentText>
                     <DialogContentText id="alert-dialog-description" className={classes.text}>
-                        Gif Fit is built around the
-                        Tabata method, resting for half the time
-                        you exercise. But you can
-                        adjust the rest time
+                        Choose the number of exercises, how long you
+                        will perform each one, and the total number of rounds.
+                    </DialogContentText>
+                    <DialogContentText id="alert-dialog-description" className={classes.text}>
+                        Gif Fit recommends resting for half the time
+                        you exercise (aka the Tabata Method). But you can
+                        choose any rest time
                         to make a workout more
                         or less challenging.
                     </DialogContentText>
