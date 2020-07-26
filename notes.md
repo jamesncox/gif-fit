@@ -5,7 +5,7 @@
 
 # Design To Do
 
-[] Stub out design for "workout" page
+[x] Stub out design for "workout" page
 [] Settle on the CSS timer design, and how to change the time values
 [] Display a countdown timer after clicking "Start Workout"
 [x] Stub out design for "home" page 
@@ -13,4 +13,5 @@
 # Functionality To Do
 
 [] Figure out how to use setTimeout() to display one object in an array at a time
-[] Also how to add the selected rest timer before each move starts
+[x] Also how to add the selected rest timer before each move starts
+[] When use selects number of exercises, allow them to see the list of moves?
