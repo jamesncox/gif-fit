@@ -31,8 +31,6 @@ function Workout(props) {
         }
 
         const randomExercises = shuffle(data)
-
-        console.log(randomExercises)
         return randomExercises
     }
 
@@ -57,8 +55,8 @@ function Workout(props) {
         <Box className={classes.root}>
             {/* <RestTimer /> */}
             {/* <ExerciseTimer /> */}
-            {practiceSetTimeout()}
-            <DisplayGif exerciseGif={exerciseData[0]} />
+            {/* {practiceSetTimeout()} */}
+            <DisplayGif exercise={exerciseData[0]} />
             {/* {grabRandomExercises()} */}
             {/* {generateWorkout()} */}
         </Box>

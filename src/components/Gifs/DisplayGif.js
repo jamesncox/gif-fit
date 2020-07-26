@@ -25,31 +25,31 @@ const useStyles = makeStyles((theme) => ({
 
 export default function DisplayGif(props) {
     const classes = useStyles();
+    const img = require.context('../../assets/', true);
 
     return (
         < Card className={classes.root} >
             <CardHeader
-                title={props.exerciseGif.name}
+                title={props.exercise.name}
                 className={classes.header}
             />
             <CardMedia
                 className={classes.media}
-                // image={`${image}`}
-                image={props.exerciseGif.gif}
-                title={props.exerciseGif.name}
+                image={img(`./${props.exercise.gif}`)}
+                title={props.exercise.name}
             />
             <CardContent>
                 <Typography className={classes.text}>
                     Description
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    {props.exerciseGif.description}
+                    {props.exercise.description}
                 </Typography>
                 <Typography className={classes.text}>
                     Modified
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    {props.exerciseGif.modified}
+                    {props.exercise.modified}
                 </Typography>
             </CardContent>
         </Card >
