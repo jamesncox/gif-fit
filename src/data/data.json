@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "gif": "../assets/squat-jumps.gif",
+        "gif": "../../assets/squat-jumps.gif",
         "name": "Squat Jumps",
         "description": "Feet shoulder-width apart. Squat with knees behind toes, jump up, return to squat and repeat",
         "modified": "Slight squat and smaller jump",
@@ -12,7 +12,7 @@
     },
     {
         "id": 2,
-        "gif": "../assets/burpees.webp",
+        "gif": "../../assets/burpees.webp",
         "name": "Burpees",
         "description": "Lower body to ground all the way, as you perform a push-up, jump up straight. Repeat.",
         "modified": "Lift up from ground without push-up, less intense jump",
@@ -24,7 +24,7 @@
     },
     {
         "id": 3,
-        "gif": "../assets/split-squat-jumps.webp",
+        "gif": "../../assets/split-squat-jumps.webp",
         "name": "Split Squat Jumps",
         "description": "Alternate legs as you jump into a lunge and switch feet after each jump",
         "modified": "Step into each lunge instead of jumping",
@@ -35,7 +35,7 @@
     },
     {
         "id": 4,
-        "gif": "../assets/hand-release-pusups.gif",
+        "gif": "../../assets/hand-release-pusups.gif",
         "name": "Hand-release Push-ups",
         "description": "In push-up position, lower body all the way to the ground, lift hands off ground, then perform push-up",
         "modified": "Perform push-up keeping knees on the ground",
@@ -45,7 +45,7 @@
     },
     {
         "id": 5,
-        "gif": "../assets/mountain-climbers.webp",
+        "gif": "../../assets/mountain-climbers.webp",
         "name": "Mountain Climbers",
         "description": "In a plank, quickly bring knees to chest, alternating legs",
         "modified": "Decrease speed, lower range of motion",
@@ -57,7 +57,7 @@
     },
     {
         "id": 6,
-        "gif": "../assets/jump-knee-tucks.webp",
+        "gif": "../../assets/jump-knee-tucks.webp",
         "name": "Jump Knee Tucks",
         "description": "Jump up and bring knees as high to chest as possible. Repeat quickly",
         "modified": "Jump lower, bringing knees up less high and jump slower",
@@ -68,7 +68,7 @@
     },
     {
         "id": 7,
-        "gif": "../assets/high-knees.webp",
+        "gif": "../../assets/high-knees.webp",
         "name": "High Knees",
         "description": "Run in place, bringing knees up to your waist line",
         "modified": "Run slower, bringing knees up less high",
@@ -79,7 +79,7 @@
     },
     {
         "id": 8,
-        "gif": "../assets/jump-squat-overhead-touch.gif",
+        "gif": "../../assets/jump-squat-overhead-touch.gif",
         "name": "Jump Squat with Overhead Touch",
         "description": "Feet shoulder-width apart. Squat with knees behind toes, jump up, touch hands together over your head, return to squat and repeat",
         "modified": "Slight squat and smaller jump",
@@ -90,7 +90,7 @@
     },
     {
         "id": 9,
-        "gif": "../assets/modified-burpee.webp",
+        "gif": "../../assets/modified-burpee.webp",
         "name": "Modified burpee",
         "description": "Jump down, with hands on floor and extend legs behind you, stand back up",
         "modified": "Place hands on floor and step legs behind you, stand back up",
@@ -101,7 +101,7 @@
     },
     {
         "id": 10,
-        "gif": "../assets/air-squats.gif",
+        "gif": "../../assets/air-squats.gif",
         "name": "Air Squats",
         "description": "Feet shoulder-width apart, quickly squat keeping your back straight, knees behind your feet and stand back up straight",
         "modified": "Squat less deep and at a slower pace",
@@ -112,7 +112,7 @@
     },
     {
         "id": 11,
-        "gif": "../assets/controlled-pushup.webp",
+        "gif": "../../assets/controlled-pushup.webp",
         "name": "Controlled Push-ups",
         "description": "Perform a push-up, slow and controlled, lowering body until chest touches ground, and mainting good form the entire time",
         "modified": "Perform push-up keeping knees on the ground",
@@ -123,7 +123,7 @@
     },
     {
         "id": 12,
-        "gif": "../assets/military-pushup.webp",
+        "gif": "../../assets/military-pushup.webp",
         "name": "Military Push-ups",
         "description": "Hands directly underneath shoulders, elbows pointing back, perform push, lowering body the ground",
         "modified": "Perform push-up keeping knees on the ground",
@@ -134,7 +134,7 @@
     },
     {
         "id": 13,
-        "gif": "../assets/squat-hold.gif",
+        "gif": "../../assets/squat-hold.gif",
         "name": "Squat Hold",
         "description": "Feet shoulder width apart, knees behind toes, perform squat and hold for duration of the round",
         "modified": "Perform less deep squat",
@@ -144,7 +144,7 @@
     },
     {
         "id": 14,
-        "gif": "../assets/toe-touch-pushup.webp",
+        "gif": "../../assets/toe-touch-pushup.webp",
         "name": "Toe Touch Push-up",
         "description": "Perform push-up, then tap right toe followed by left toe",
         "modified": "Perform push-up and toe taps with knees on ground",
@@ -155,7 +155,7 @@
     },
     {
         "id": 15,
-        "gif": "../assets/alternating-forward-lunges.webp",
+        "gif": "../../assets/alternating-forward-lunges.webp",
         "name": "Alternating Forward Lunges",
         "description": "Lunge forward with right leg, keeping knee behind toe, stand back up, and lunge with left leg. Repeat",
         "modified": "Hold onto wall or something stable for balance",
@@ -165,7 +165,7 @@
     },
     {
         "id": 16,
-        "gif": "../assets/plank-touch-and-reach.webp",
+        "gif": "../../assets/plank-touch-and-reach.webp",
         "name": "Plank Touch and Reach",
         "description": "In a plank, first touch your opposite shoulder, then reach hand up to sky, and come back to plank and do other hand",
         "modified": "Only touch shoulders, no reach, or only do the reach and do not touch shoulder",
@@ -175,7 +175,7 @@
     },
     {
         "id": 17,
-        "gif": "../assets/knee-to-elbow-plank.webp",
+        "gif": "../../assets/knee-to-elbow-plank.webp",
         "name": "Knee to Elbow Plank",
         "description": "Plank with forearms on ground, alternate bringing knee towards same-side elbow, medium pace and controlled",
         "modified": "Do not exaggerate knee to elbow movement",
@@ -185,7 +185,7 @@
     },
     {
         "id": 18,
-        "gif": "../assets/toe-touchers.gif",
+        "gif": "../../assets/toe-touchers.gif",
         "name": "Toe Touchers",
         "description": "Lying on back with legs extended straight up, reach up with hands and touch your toes, repeat for duration of round",
         "modified": "Reach up with hands, but don't try and touch toes",
@@ -195,7 +195,7 @@
     },
     {
         "id": 19,
-        "gif": "../assets/superman.gif",
+        "gif": "../../assets/superman.gif",
         "name": "Superman",
         "description": "Lying on your stomach, extend hands straight out, then lift your legs and arms up, keeping stomach on floor, hold for a second, lower and repeat",
         "modified": "Do not exaggerate arm and leg extension",
@@ -205,7 +205,7 @@
     },
     {
         "id": 20,
-        "gif": "../assets/plank-hip-dips.webp",
+        "gif": "../../assets/plank-hip-dips.webp",
         "name": "Plank Hip Dips",
         "description": "In a plank with forearms on floor, swivel hips first the right and touch floor, then swivel hips to left and touch floor. Repeat for duration of round",
         "modified": "Swivel hips left and right, but don't try to touch floor",
@@ -215,7 +215,7 @@
     },
     {
         "id": 21,
-        "gif": "../assets/pushup-plank.gif",
+        "gif": "../../assets/pushup-plank.gif",
         "name": "Push-up Plank",
         "description": "With forearms on floor in a plank, place right hand on floor, then left hand on floor, and walk back down. Repeat for duration of round",
         "modified": "Perform plank and moves with knees on ground",
@@ -226,7 +226,7 @@
     },
     {
         "id": 22,
-        "gif": "../assets/plank-crossbody-hold.webp",
+        "gif": "../../assets/plank-crossbody-hold.webp",
         "name": "Cross-body Plank with Hold",
         "description": "Hands on floor plank, reach under opposite arm, touch body and hold, repeat on other side",
         "modified": "Perform plank and hold with knees touching ground",
@@ -236,7 +236,7 @@
     },
     {
         "id": 23,
-        "gif": "../assets/half-plank-shoulder-touch.webp",
+        "gif": "../../assets/half-plank-shoulder-touch.webp",
         "name": "Half Plank Shoulder Touch",
         "description": "With hands on feet on ground, touch right shoulder with left hand, and then left shoulder with right hand",
         "modified": "Slightly lift left then right hand off the floor. Don't touch shoulders",
@@ -246,7 +246,7 @@
     },
     {
         "id": 24,
-        "gif": "../assets/plank-jacks.webp",
+        "gif": "../../assets/plank-jacks.webp",
         "name": "Plank Jacks",
         "description": "Plank with forearms on ground, jump toes out then in in a jumping-jack style motion",
         "modified": "In the plank, step toes out and in one at a time, lower range of motion",
@@ -256,7 +256,7 @@
     },
     {
         "id": 25,
-        "gif": "../assets/tricep-dips.gif",
+        "gif": "../../assets/tricep-dips.gif",
         "name": "Tricep Dips",
         "description": "Using a stable chair behind you, grab the edge and bend your knees, lower your body with your arms then lift yourself up",
         "modified": "User a surface higher from the ground to make your dip shorter",
@@ -266,7 +266,7 @@
     },
     {
         "id": 26,
-        "gif": "../assets/wide-grip-pushups.gif",
+        "gif": "../../assets/wide-grip-pushups.gif",
         "name": "Wide Grip Push-ups",
         "description": "Place hands further than shoulder-width apart and lower body til chest touches ground then push body up in explosive movement",
         "modified": "Peform push-up with knees on the ground",
@@ -276,7 +276,7 @@
     },
     {
         "id": 27,
-        "gif": "../assets/flutter-kicks.gif",
+        "gif": "../../assets/flutter-kicks.gif",
         "name": "Flutter Kicks",
         "description": "Lying on back, head on floor, hands under your hips, raise legs slightly off the ground and quickly move legs in a scissors motion, keeping legs straight and core tight",
         "modified": "Lower the angle of your legs so they are not as high off the ground",
@@ -286,7 +286,7 @@
     },
     {
         "id": 28,
-        "gif": "../assets/jumping-jacks.gif",
+        "gif": "../../assets/jumping-jacks.gif",
         "name": "Jumping Jacks",
         "description": "With hands by side, feet together, quickly jump and bring hands up while landing in a wide stance, then hands back down and feet together",
         "modified": "Lower the pace of each jump",
@@ -296,7 +296,7 @@
     },
     {
         "id": 29,
-        "gif": "../assets/180-squat-jump.gif",
+        "gif": "../../assets/180-squat-jump.gif",
         "name": "180 Squat Jumps",
         "description": "Perform squat and as you jump, rotate 180 degrees to face the opposite direction, landing in a squat, and jump back the opposite direction",
         "modified": "Do not exaggerate the squat as deeply",
@@ -307,7 +307,7 @@
     },
     {
         "id": 30,
-        "gif": "../assets/lateral-lunges.gif",
+        "gif": "../../assets/lateral-lunges.gif",
         "name": "Lateral Lunges",
         "description": "Step left leg out to side and lunge, come back to center, then step right leg out side and lunge, come back to center",
         "modified": "Take a smaller step to the side with a less exaggerated lunge",
@@ -317,7 +317,7 @@
     },
     {
         "id": 31,
-        "gif": "../assets/rock-the-boat.gif",
+        "gif": "../../assets/rock-the-boat.gif",
         "name": "Rock the Boat",
         "description": "Lying on your back, hands outstretched over your head, legs raised straight off the ground, rock back and forth using your core to stabilize",
         "modified": "Place your arms down by your side to help stabilize you",
@@ -327,7 +327,7 @@
     },
     {
         "id": 32,
-        "gif": "../assets/wide-stance-jump-squat.gif",
+        "gif": "../../assets/wide-stance-jump-squat.gif",
         "name": "Wide Stance Jump Squats",
         "description": "With feet together jump into a squat landing with feet in a wide stance, jump back up feet together again",
         "modified": "Narrow stance of feet and depth of squat",
@@ -338,7 +338,7 @@
     },
     {
         "id": 33,
-        "gif": "../assets/pike-press.gif",
+        "gif": "../../assets/pike-press.gif",
         "name": "Pike Press",
         "description": "Place hands and feet on ground, walk hands up towards feet until hips are bent, lower head towards ground until head lightly touches ground, push back up",
         "modified": "Lessen the angle of your hips and don't lower head all the way to the ground",

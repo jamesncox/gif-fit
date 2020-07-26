@@ -28,26 +28,26 @@ export default function DisplayGif(props) {
     return (
         <Card className={classes.root}>
             <CardHeader
-                title="Burpees"
+                title={props.name}
                 className={classes.header}
             />
             <CardMedia
                 className={classes.media}
-                image={require("../../assets/burpees.webp")}
-                title="burpees"
+                image={require(props.gif)}
+                title={props.name}
             />
             <CardContent>
                 <Typography className={classes.text}>
                     Description
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    Lower body to ground all the way, as you perform a push-up, jump up straight. Repeat.
+                    {props.description}
                 </Typography>
                 <Typography className={classes.text}>
                     Modified
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    Lift up from ground without push-up, less intense jump
+                    {props.modified}
                 </Typography>
             </CardContent>
         </Card>
