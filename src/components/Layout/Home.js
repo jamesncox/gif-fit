@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import Title from './Title'
 import Subtitle from './Subtitle'
 import MoreInfoButton from './MoreInfoButton'
@@ -34,10 +35,17 @@ function Home(props) {
             <SelectExerciseTime />
             <SelectRestTime />
             <SelectRoundNumber />
-            <StartWorkout />
-            <DisplayTotalTime />
+            {props.restTime && props.numberOfExercises && props.exerciseTime && props.numberOfRounds ? <StartWorkout /> : null}
+            {props.restTime && props.numberOfExercises && props.exerciseTime && props.numberOfRounds ? <DisplayTotalTime /> : null}
         </div>
     )
 }
 
-export default Home
+const mapStateToProps = state => ({
+    numberOfExercises: state.params.numberOfExercises,
+    exerciseTime: state.params.exerciseTime,
+    restTime: state.params.restTime,
+    numberOfRounds: state.params.numberOfRounds
+})
+
+export default connect(mapStateToProps)(Home)
