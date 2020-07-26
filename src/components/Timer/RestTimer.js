@@ -24,11 +24,8 @@ function RestTimer(props) {
     const [counter, setCounter] = useState(props.restTime / 1000);
 
     useEffect(() => {
-        let mounted = true
-        if (mounted) {
-            counter > 0 && setTimeout(() => setCounter(counter - 1), 1000)
-        }
-        return () => mounted = false
+        const timeout = counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
+        return () => clearInterval(timeout);
     }, [counter])
 
     return (
