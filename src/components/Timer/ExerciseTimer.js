@@ -24,7 +24,7 @@ function ExerciseTimer(props) {
     const [counter, setCounter] = useState(props.exerciseTime / 1000);
 
     useEffect(() => {
-        const timeout = counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
+        const timeout = counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
         return () => clearInterval(timeout);
     }, [counter])
 

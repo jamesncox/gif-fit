@@ -34,12 +34,17 @@ function Workout(props) {
         // return randomExercises
     }
 
+    const practiceSetTimeout = () => {
+        return <RestTimer />
+    }
+
     return (
         <Box className={classes.root}>
-            {/* <RestTimer /> */}
-            {/* <ExerciseTimer /> */}
+            <RestTimer />
+            <ExerciseTimer />
             {/* <DisplayGif /> */}
             {grabRandomExercises()}
+            {/* {practiceSetTimeout()} */}
         </Box>
     )
 }
