@@ -9,6 +9,7 @@ import SelectRestTime from './SelectRestTime'
 import StartWorkout from './StartWorkout'
 import DisplayTotalTime from './DisplayTotalTime'
 import SelectRoundNumber from './SelectRoundNumber'
+import StopWorkout from './StopWorkout'
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -30,6 +31,7 @@ function Home(props) {
         return (
             <div className={classes.root}>
                 <Title />
+                <StopWorkout />
             </div>
         )
     } else {
