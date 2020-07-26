@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { connect } from 'react-redux'
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
@@ -18,6 +18,8 @@ const useStyles = makeStyles((theme) => ({
 
 function Workout(props) {
     const classes = useStyles();
+    const [showRestTimer, setShowRestTimer] = useState(true)
+    const [showExerciseTimer, setShowExerciseTimer] = useState(false)
 
     const grabRandomExercises = () => {
         function shuffle(a) {
@@ -35,16 +37,18 @@ function Workout(props) {
     }
 
     const practiceSetTimeout = () => {
-        return <RestTimer />
+        showRestTimer === true && setInterval(() => setShowRestTimer(false, setShowExerciseTimer(true)), props.restTime);
+        showExerciseTimer === true && setInterval(() => setShowExerciseTimer(false, setShowRestTimer(true)), props.exerciseTime)
+        return showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null
     }
 
     return (
         <Box className={classes.root}>
-            <RestTimer />
-            <ExerciseTimer />
+            {/* <RestTimer /> */}
+            {/* <ExerciseTimer /> */}
             {/* <DisplayGif /> */}
             {grabRandomExercises()}
-            {/* {practiceSetTimeout()} */}
+            {practiceSetTimeout()}
         </Box>
     )
 }
