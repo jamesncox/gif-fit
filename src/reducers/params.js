@@ -31,7 +31,7 @@ export default (state = {
             return { ...state, numberOfRounds: action.payload }
 
         case CLEAR_PARAMS:
-            return { ...state, numberOfExercises: null, exerciseTime: null, restTime: null, numberOfRounds: null }
+            return { ...state, numberOfExercises: null, exerciseTime: null, restTime: null, numberOfRounds: null, exercises: [] }
 
         case SET_EXERCISES:
             function shuffle(a) {

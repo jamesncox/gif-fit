@@ -6,6 +6,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
+import ExcersiseList from './ExerciseList'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -53,6 +54,7 @@ function SelectExerciseNumber(props) {
             <Button className={classes.button} onClick={handleOpen}>
                 Select Number of Exercises
             </Button>
+            {props.exercises.length !== 0 ? <ExcersiseList /> : null}
             <FormControl className={classes.formControl}>
                 <Select
                     labelId="demo-controlled-open-select-label"
@@ -85,9 +87,13 @@ function SelectExerciseNumber(props) {
     );
 }
 
+const mapStateToProps = state => ({
+    exercises: state.params.exercises
+})
+
 const mapDispatchToProps = dispatch => ({
     setNumberOfExercises: (number) => dispatch({ type: SET_NUMBER_OF_EXERCISES, payload: number }),
     setExercises: () => dispatch({ type: SET_EXERCISES })
 })
 
-export default connect(null, mapDispatchToProps)(SelectExerciseNumber)
+export default connect(mapStateToProps, mapDispatchToProps)(SelectExerciseNumber)
