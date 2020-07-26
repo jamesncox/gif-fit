@@ -7,8 +7,6 @@ import RestTimer from '../Timer/RestTimer'
 import ExerciseTimer from '../Timer/ExerciseTimer'
 import DisplayGif from '../Gifs/DisplayGif'
 
-import data from '../../data/data.json'
-
 const useStyles = makeStyles((theme) => ({
     root: {
         textAlign: "center",
@@ -21,42 +19,36 @@ function Workout(props) {
     const [showRestTimer, setShowRestTimer] = useState(true)
     const [showExerciseTimer, setShowExerciseTimer] = useState(false)
 
-    const grabRandomExercises = () => {
-        function shuffle(a) {
-            for (let i = a.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [a[i], a[j]] = [a[j], a[i]];
-            }
-            return a.slice(0, props.numberOfExercises);
-        }
-
-        const randomExercises = shuffle(data)
-        return randomExercises
-    }
-
-    let exerciseData = grabRandomExercises()
-
     const generateWorkout = () => {
-        const exercises = grabRandomExercises()
-        for (let i; i < exercises.length; i++) {
+        for (let i; i < props.exercises.length; i++) {
             showRestTimer === true && setInterval(() => setShowRestTimer(false, setShowExerciseTimer(true)), props.restTime);
             showExerciseTimer === true && setInterval(() => setShowExerciseTimer(false, setShowRestTimer(true)), props.exerciseTime)
-            return showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null && <DisplayGif props={exercises[i]} />
+            return (
+                <>
+                    {showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null}
+                    <DisplayGif exercise={props.exercises[i]} />
+                </>
+            )
         }
     }
 
     const practiceSetTimeout = () => {
         showRestTimer === true && setInterval(() => setShowRestTimer(false, setShowExerciseTimer(true)), props.restTime);
         showExerciseTimer === true && setInterval(() => setShowExerciseTimer(false, setShowRestTimer(true)), props.exerciseTime)
-        return showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null
+        return (
+            <>
+                {showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null}
+                <DisplayGif exercise={props.exercises[0]} />
+            </>
+        )
     }
 
     return (
         <Box className={classes.root}>
             {/* <RestTimer /> */}
             {/* <ExerciseTimer /> */}
-            {/* {practiceSetTimeout()} */}
-            <DisplayGif exercise={exerciseData[0]} />
+            {practiceSetTimeout()}
+            {/* <DisplayGif exercise={exerciseData[0]} /> */}
             {/* {grabRandomExercises()} */}
             {/* {generateWorkout()} */}
         </Box>
@@ -67,7 +59,8 @@ const mapStateToProps = state => ({
     numberOfExercises: state.params.numberOfExercises,
     exerciseTime: state.params.exerciseTime,
     restTime: state.params.restTime,
-    numberOfRounds: state.params.numberOfRounds
+    numberOfRounds: state.params.numberOfRounds,
+    exercises: state.params.exercises
 })
 
 export default connect(mapStateToProps)(Workout)

@@ -51,7 +51,7 @@ function StartWorkout(props) {
 }
 
 const mapDispatchToProps = dispatch => ({
-    isActiveTrue: () => dispatch({ type: IS_ACTIVE_TRUE })
+    isActiveTrue: () => dispatch({ type: IS_ACTIVE_TRUE }),
 })
 
 export default connect(null, mapDispatchToProps)(StartWorkout)

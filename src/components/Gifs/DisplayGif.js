@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: 600,
     },
     header: {
-        color: "#7e57c2"
+        color: "#ba68c8"
     },
     media: {
         height: 0,
