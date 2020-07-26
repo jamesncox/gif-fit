@@ -32,5 +32,4 @@ export default function Subtitle(props) {
             </Typography>
         </Box>
     )
-
 }

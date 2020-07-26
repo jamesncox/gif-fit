@@ -10,8 +10,7 @@ import StartWorkout from './StartWorkout'
 import DisplayTotalTime from './DisplayTotalTime'
 import SelectRoundNumber from './SelectRoundNumber'
 import StopWorkout from './StopWorkout'
-import RestTimer from '../Timer/RestTimer'
-import ExerciseTimer from '../Timer/ExerciseTimer'
+import Workout from './Workout'
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -33,8 +32,7 @@ function Home(props) {
         return (
             <div className={classes.root}>
                 <Title />
-                <RestTimer />
-                <ExerciseTimer />
+                <Workout />
                 <StopWorkout />
             </div>
         )
