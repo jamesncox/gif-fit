@@ -5,10 +5,12 @@ import Box from '@material-ui/core/Box'
 
 import RestTimer from '../Timer/RestTimer'
 import ExerciseTimer from '../Timer/ExerciseTimer'
+import DisplayGif from '../Gifs/DisplayGif'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        textAlign: "center"
+        textAlign: "center",
+        alignSelf: "center",
     },
 }));
 
@@ -17,8 +19,9 @@ function Workout(props) {
 
     return (
         <Box className={classes.root}>
-            <RestTimer />
+            {/* <RestTimer /> */}
             <ExerciseTimer />
+            <DisplayGif />
         </Box>
     )
 }
