@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#ba68c8"
     },
     time: {
-        color: "#7e57c2",
+        color: "#ba68c8",
         fontSize: "3rem"
     }
 }))

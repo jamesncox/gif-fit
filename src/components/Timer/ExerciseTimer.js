@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     header: {
         fontSize: "1.5rem",
         fontFamily: "'Exo', sans-serif",
-        color: "#ba68c8"
+        color: "#7e57c2"
     },
     time: {
         color: "#7e57c2",
