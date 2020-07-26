@@ -1,6 +1,9 @@
 import React from 'react';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
-import { IS_ACTIVE_FALSE } from '../../actionTypes'
+import {
+    IS_ACTIVE_FALSE,
+    CLEAR_PARAMS
+} from '../../actionTypes'
 import Button from '@material-ui/core/Button';
 import { deepPurple } from '@material-ui/core/colors';
 import { connect } from 'react-redux';
@@ -34,6 +37,7 @@ function StartWorkout(props) {
 
     const handleClick = () => {
         props.isActiveFalse()
+        props.clearParams()
     }
 
     return (
@@ -51,7 +55,8 @@ function StartWorkout(props) {
 }
 
 const mapDispatchToProps = dispatch => ({
-    isActiveFalse: () => dispatch({ type: IS_ACTIVE_FALSE })
+    isActiveFalse: () => dispatch({ type: IS_ACTIVE_FALSE }),
+    clearParams: () => dispatch({ type: CLEAR_PARAMS })
 })
 
 export default connect(null, mapDispatchToProps)(StartWorkout)

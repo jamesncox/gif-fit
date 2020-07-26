@@ -65,7 +65,7 @@ function SelectExerciseTime(props) {
                     autoWidth={true}
                 >
                     <MenuItem value={30000}>30 sec</MenuItem>
-                    <MenuItem value={45000}>40 sec</MenuItem>
+                    <MenuItem value={40000}>40 sec</MenuItem>
                     <MenuItem value={60000}>60 sec</MenuItem>
                 </Select>
             </FormControl>

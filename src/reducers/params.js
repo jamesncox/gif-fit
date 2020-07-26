@@ -2,7 +2,8 @@ import {
     SET_NUMBER_OF_EXERCISES,
     SET_EXERCISE_TIME,
     SET_REST_TIME,
-    SET_NUMBER_OF_ROUNDS
+    SET_NUMBER_OF_ROUNDS,
+    CLEAR_PARAMS
 } from '../actionTypes'
 
 export default (state = {
@@ -24,6 +25,9 @@ export default (state = {
 
         case SET_NUMBER_OF_ROUNDS:
             return { ...state, numberOfRounds: action.payload }
+
+        case CLEAR_PARAMS:
+            return { ...state, numberOfExercises: null, exerciseTime: null, restTime: null, numberOfRounds: null }
 
         default:
             return state
