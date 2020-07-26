@@ -26,26 +26,35 @@ const useStyles = makeStyles((theme) => ({
 function Home(props) {
     const classes = useStyles();
 
-    return (
-        <div className={classes.root}>
-            <Title />
-            <Subtitle />
-            <MoreInfoButton />
-            <SelectExerciseNumber />
-            <SelectExerciseTime />
-            <SelectRestTime />
-            <SelectRoundNumber />
-            {props.restTime && props.numberOfExercises && props.exerciseTime && props.numberOfRounds ? <StartWorkout /> : null}
-            {props.restTime && props.numberOfExercises && props.exerciseTime && props.numberOfRounds ? <DisplayTotalTime /> : null}
-        </div>
-    )
+    if (props.isActive === true) {
+        return (
+            <div className={classes.root}>
+                <Title />
+            </div>
+        )
+    } else {
+        return (
+            <div className={classes.root}>
+                <Title />
+                <Subtitle />
+                <MoreInfoButton />
+                <SelectExerciseNumber />
+                <SelectExerciseTime />
+                <SelectRestTime />
+                <SelectRoundNumber />
+                {props.restTime && props.numberOfExercises && props.exerciseTime && props.numberOfRounds ? <StartWorkout /> : null}
+                {props.restTime && props.numberOfExercises && props.exerciseTime && props.numberOfRounds ? <DisplayTotalTime /> : null}
+            </div>
+        )
+    }
 }
 
 const mapStateToProps = state => ({
     numberOfExercises: state.params.numberOfExercises,
     exerciseTime: state.params.exerciseTime,
     restTime: state.params.restTime,
-    numberOfRounds: state.params.numberOfRounds
+    numberOfRounds: state.params.numberOfRounds,
+    isActive: state.isActive.isActive
 })
 
 export default connect(mapStateToProps)(Home)
