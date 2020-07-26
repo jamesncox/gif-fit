@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
@@ -18,6 +18,20 @@ function Workout(props) {
     const classes = useStyles();
     const [showRestTimer, setShowRestTimer] = useState(true)
     const [showExerciseTimer, setShowExerciseTimer] = useState(false)
+    // const [exercise, setExercise] = useState(null)
+
+    // useEffect(() => {
+    //     for (let i; i < props.exercises.length; i++) {
+    //         showRestTimer === true && setInterval(() => setShowRestTimer(false, setShowExerciseTimer(true)), props.restTime);
+    //         showExerciseTimer === true && setInterval(() => setShowExerciseTimer(false, setShowRestTimer(true)), props.exerciseTime)
+    //         setGenerateWorkout(
+    //             <>
+    //                 {showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null}
+    //                 <DisplayGif exercise={props.exercises[i]} />
+    //             </>
+    //         )
+    //     }
+    // }, [generateWorkout, props.exercises, props.restTime, props.exerciseTime, showExerciseTimer, showRestTimer])
 
     const generateWorkout = () => {
         for (let i; i < props.exercises.length; i++) {
@@ -45,11 +59,7 @@ function Workout(props) {
 
     return (
         <Box className={classes.root}>
-            {/* <RestTimer /> */}
-            {/* <ExerciseTimer /> */}
             {practiceSetTimeout()}
-            {/* <DisplayGif exercise={exerciseData[0]} /> */}
-            {/* {grabRandomExercises()} */}
             {/* {generateWorkout()} */}
         </Box>
     )
