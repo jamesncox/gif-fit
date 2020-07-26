@@ -24,7 +24,11 @@ function ExerciseTimer(props) {
     const [counter, setCounter] = useState(props.exerciseTime / 1000);
 
     useEffect(() => {
-        counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
+        let mounted = true;
+        if (mounted) {
+            counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
+        }
+        return () => mounted = false;
     }, [counter])
 
     return (
