@@ -5,9 +5,10 @@
 
 # Design To Do
 
-[] Stub out design for "home" page 
 [] Stub out design for "workout" page
 [] Settle on the CSS timer design, and how to change the time values
+[] Display a countdown timer after clicking "Start Workout"
+[x] Stub out design for "home" page 
 
 # Functionality To Do
 
