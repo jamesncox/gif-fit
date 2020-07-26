@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux'
 import params from './params'
+import isActive from './isActive'
 
 
 const rootReducer = combineReducers(
     {
-        params
+        params,
+        isActive
     }
 )
 
