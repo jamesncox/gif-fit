@@ -33,7 +33,18 @@ function Workout(props) {
         const randomExercises = shuffle(data)
 
         console.log(randomExercises)
-        // return randomExercises
+        return randomExercises
+    }
+
+    let exerciseData = grabRandomExercises()
+
+    const generateWorkout = () => {
+        const exercises = grabRandomExercises()
+        for (let i; i < exercises.length; i++) {
+            showRestTimer === true && setInterval(() => setShowRestTimer(false, setShowExerciseTimer(true)), props.restTime);
+            showExerciseTimer === true && setInterval(() => setShowExerciseTimer(false, setShowRestTimer(true)), props.exerciseTime)
+            return showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null && <DisplayGif props={exercises[i]} />
+        }
     }
 
     const practiceSetTimeout = () => {
@@ -46,9 +57,10 @@ function Workout(props) {
         <Box className={classes.root}>
             {/* <RestTimer /> */}
             {/* <ExerciseTimer /> */}
-            {/* <DisplayGif /> */}
-            {grabRandomExercises()}
             {practiceSetTimeout()}
+            <DisplayGif exerciseGif={exerciseData[0]} />
+            {/* {grabRandomExercises()} */}
+            {/* {generateWorkout()} */}
         </Box>
     )
 }

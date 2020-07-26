@@ -11,14 +11,15 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: 600,
     },
     header: {
-
+        color: "#7e57c2"
     },
     media: {
         height: 0,
         paddingTop: '56.25%'
     },
     text: {
-        marginTop: theme.spacing(1)
+        marginTop: theme.spacing(1),
+        color: "#ba68c8"
     }
 }));
 
@@ -26,30 +27,31 @@ export default function DisplayGif(props) {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root}>
+        < Card className={classes.root} >
             <CardHeader
-                title={props.name}
+                title={props.exerciseGif.name}
                 className={classes.header}
             />
             <CardMedia
                 className={classes.media}
-                image={require(props.gif)}
-                title={props.name}
+                // image={`${image}`}
+                image={props.exerciseGif.gif}
+                title={props.exerciseGif.name}
             />
             <CardContent>
                 <Typography className={classes.text}>
                     Description
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    {props.description}
+                    {props.exerciseGif.description}
                 </Typography>
                 <Typography className={classes.text}>
                     Modified
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    {props.modified}
+                    {props.exerciseGif.modified}
                 </Typography>
             </CardContent>
-        </Card>
+        </Card >
     );
 }
