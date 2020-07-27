@@ -5,11 +5,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardMedia from '@material-ui/core/CardMedia';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        marginBottom: theme.spacing(1),
+        marginBottom: theme.spacing(2),
         textAlign: "center",
     },
     subtitle: {
@@ -18,23 +20,30 @@ const useStyles = makeStyles((theme) => ({
         color: "#b39ddb",
         fontWeight: "bold"
     },
-    icon: {
-        marginLeft: "-1rem",
-        marginBottom: "1rem",
-        fontSize: "1.2rem",
-    },
-    text: {
-        fontFamily: "'Exo', sans-serif",
-        color: "#7e57c2",
-        textAlign: "center"
+    cardRoot: {
+        width: 200,
+        textAlign: "center",
     },
     link: {
+        color: "#ba68c8"
+    },
+    header: {
+        color: "#ba68c8",
+        fontSize: ".5rem"
+    },
+    media: {
+        height: 0,
+        paddingTop: '56.25%',
+    },
+    text: {
+        marginTop: theme.spacing(1),
         color: "#ba68c8"
     }
 }));
 
 function ExerciseList(props) {
     const classes = useStyles();
+    const img = require.context('../../assets/', true);
     const [open, setOpen] = useState(false);
 
     const handleClickOpen = () => {
@@ -48,7 +57,6 @@ function ExerciseList(props) {
     return (
         <Box className={classes.root}>
             <Button className={classes.subtitle} onClick={handleClickOpen}>
-                {/* <InfoIcon className={classes.icon} /> */}
                 Exercise List
             </Button>
             <Dialog
@@ -60,9 +68,18 @@ function ExerciseList(props) {
                 <DialogContent>
                     {props.exercises.map(exercise => {
                         return (
-                            <DialogContentText key={exercise.id} id="alert-dialog-description" className={classes.text}>
-                                {exercise.name}
-                            </DialogContentText>
+                            <Card key={exercise.id} className={classes.cardRoot} >
+                                <CardHeader
+                                    title={exercise.name}
+                                    className={classes.header}
+                                    titleTypographyProps={{ variant: 'h6' }}
+                                />
+                                <CardMedia
+                                    className={classes.media}
+                                    image={img(`./${exercise.gif}`)}
+                                    title={exercise.name}
+                                />
+                            </Card >
                         )
                     })}
                 </DialogContent>

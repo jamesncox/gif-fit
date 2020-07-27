@@ -28,7 +28,7 @@ export default function DisplayGif(props) {
     const img = require.context('../../assets/', true);
 
     return (
-        < Card className={classes.root} >
+        <Card className={classes.root} >
             <CardHeader
                 title={props.exercise.name}
                 className={classes.header}
