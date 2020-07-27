@@ -388,5 +388,16 @@
             "lower-body",
             "core"
         ]
+    },
+    {
+        "id": 38,
+        "gif": "reverse-plank.gif",
+        "name": "Reverse Plank",
+        "description": "From a seated position on ground, place hands flat on ground behind you, extend both legs out straight in front of you and keep your body straight, hold for duration of round",
+        "modified": "Hold plank 5-10 seconds at a time, rest 2-3 seconds between",
+        "focus": [
+            "upper-body",
+            "core"
+        ]
     }
 ]
