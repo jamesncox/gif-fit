@@ -53,7 +53,6 @@ export default (state = {
                     .fill([...arr])
                     .reduce((a, b) => a.concat(b))
             const combinedExerciseArrays = duplicateArr(state.exercises, state.numberOfRounds)
-            console.log(combinedExerciseArrays)
             return { ...state, exercisesAsRounds: combinedExerciseArrays }
         default:
             return state
