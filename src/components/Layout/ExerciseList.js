@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
     cardRoot: {
         width: 200,
         textAlign: "center",
+        marginBottom: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
             width: 300,
         },
