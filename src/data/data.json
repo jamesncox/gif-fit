@@ -14,7 +14,7 @@
         "id": 2,
         "gif": "burpees.webp",
         "name": "Burpees",
-        "description": "Lower body to ground all the way, as you perform a push-up, jump up straight. Repeat.",
+        "description": "Lower body to ground all the way, as you perform a push-up, jump up straight. Repeat for duration of round.",
         "modified": "Lift up from ground without push-up, less intense jump",
         "focus": [
             "cardio",
@@ -343,6 +343,18 @@
         "description": "Place hands and feet on ground, walk hands up towards feet until hips are bent, lower head towards ground until head lightly touches ground, push back up",
         "modified": "Lessen the angle of your hips and don't lower head all the way to the ground",
         "focus": [
+            "upper-body"
+        ]
+    },
+    {
+        "id": 34,
+        "gif": "side-to-side-burpees.webp",
+        "name": "Side to Side Burpees",
+        "description": "Lower body to ground all the way, as you perform a push-up, jump up to the left, repeat motion, jumping back to the right. Alternate back and forth",
+        "modified": "Step to the side instead of jumping",
+        "focus": [
+            "cardio",
+            "lower-body",
             "upper-body"
         ]
     }
