@@ -359,11 +359,21 @@
         ]
     },
     {
-        "id": 34,
+        "id": 35,
         "gif": "leg-extension-and-raise.gif",
         "name": "Leg Extension and Raise",
         "description": "Lying on your back, hands on the floor for support, first extend your legs out in front of you, off the ground, then pull them into your body, raise your legs straight up and lift your hips, slowly lower your legs straight over the ground",
         "modified": "Place your hands under your lower back for support",
+        "focus": [
+            "core"
+        ]
+    },
+    {
+        "id": 36,
+        "gif": "standard-plank.gif",
+        "name": "Standard Plank",
+        "description": "With hands on floor, create a straight line with your body from your head to your feet and hold position for duration of round",
+        "modified": "Hold plank 5-10 seconds at a time, and rest 2-3 seconds between",
         "focus": [
             "core"
         ]
