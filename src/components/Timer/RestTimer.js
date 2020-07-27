@@ -11,10 +11,10 @@ const useStyles = makeStyles((theme) => ({
     header: {
         fontSize: "1.5rem",
         fontFamily: "'Exo', sans-serif",
-        color: "#ba68c8"
+        color: "#ce93d8"
     },
     time: {
-        color: "#ba68c8",
+        color: "#ce93d8",
         fontSize: "3rem"
     }
 }))
