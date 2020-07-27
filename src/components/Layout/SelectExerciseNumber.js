@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux'
 import { makeStyles } from '@material-ui/core/styles';
-import { SET_NUMBER_OF_EXERCISES, SET_EXERCISES } from '../../actionTypes'
+import {
+    SET_NUMBER_OF_EXERCISES,
+    SET_EXERCISES,
+    SET_EXERCISE_ROUNDS
+} from '../../actionTypes'
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
@@ -39,6 +43,7 @@ function SelectExerciseNumber(props) {
         setNumber(event.target.value);
         props.setNumberOfExercises(event.target.value)
         props.setExercises()
+        props.setExerciseRounds()
     };
 
     const handleClose = () => {
@@ -93,7 +98,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     setNumberOfExercises: (number) => dispatch({ type: SET_NUMBER_OF_EXERCISES, payload: number }),
-    setExercises: () => dispatch({ type: SET_EXERCISES })
+    setExercises: () => dispatch({ type: SET_EXERCISES }),
+    setExerciseRounds: () => dispatch({ type: SET_EXERCISE_ROUNDS }),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(SelectExerciseNumber)

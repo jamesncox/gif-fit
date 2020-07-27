@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux'
-import { SET_NUMBER_OF_ROUNDS } from '../../actionTypes'
+import {
+    SET_NUMBER_OF_ROUNDS,
+    SET_EXERCISE_ROUNDS,
+} from '../../actionTypes'
 import { makeStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
@@ -37,6 +40,7 @@ function SelectRoundNumber(props) {
     const handleChange = (event) => {
         setNumber(event.target.value);
         props.setNumberOfRounds(event.target.value)
+        props.setExerciseRounds()
     };
 
     const handleClose = () => {
@@ -80,7 +84,8 @@ function SelectRoundNumber(props) {
 }
 
 const mapDispatchToProps = dispatch => ({
-    setNumberOfRounds: (number) => dispatch({ type: SET_NUMBER_OF_ROUNDS, payload: number })
+    setNumberOfRounds: (number) => dispatch({ type: SET_NUMBER_OF_ROUNDS, payload: number }),
+    setExerciseRounds: () => dispatch({ type: SET_EXERCISE_ROUNDS })
 })
 
 export default connect(null, mapDispatchToProps)(SelectRoundNumber)

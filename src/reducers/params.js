@@ -4,7 +4,8 @@ import {
     SET_REST_TIME,
     SET_NUMBER_OF_ROUNDS,
     CLEAR_PARAMS,
-    SET_EXERCISES
+    SET_EXERCISES,
+    SET_EXERCISE_ROUNDS
 } from '../actionTypes'
 
 import data from '../data/data.json'
@@ -14,7 +15,8 @@ export default (state = {
     exerciseTime: null,
     restTime: null,
     numberOfRounds: null,
-    exercises: []
+    exercises: [],
+    exercisesAsRounds: []
 }, action) => {
     switch (action.type) {
 
@@ -45,6 +47,14 @@ export default (state = {
             const randomExercises = shuffle(data)
             return { ...state, exercises: randomExercises }
 
+        case SET_EXERCISE_ROUNDS:
+            const duplicateArr = (arr, times) =>
+                Array(times)
+                    .fill([...arr])
+                    .reduce((a, b) => a.concat(b))
+            const combinedExerciseArrays = duplicateArr(state.exercises, state.numberOfRounds)
+            console.log(combinedExerciseArrays)
+            return { ...state, exercisesAsRounds: combinedExerciseArrays }
         default:
             return state
     }
