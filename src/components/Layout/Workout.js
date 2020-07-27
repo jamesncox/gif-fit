@@ -5,6 +5,7 @@ import Box from '@material-ui/core/Box'
 
 import RestTimer from '../Timer/RestTimer'
 import ExerciseTimer from '../Timer/ExerciseTimer'
+import StartTimer from '../Timer/StartTimer'
 import DisplayGif from '../Gifs/DisplayGif'
 
 const useStyles = makeStyles((theme) => ({
@@ -16,8 +17,9 @@ const useStyles = makeStyles((theme) => ({
 
 function Workout(props) {
     const classes = useStyles();
-    const [showRestTimer, setShowRestTimer] = useState(true)
+    const [showRestTimer, setShowRestTimer] = useState(false)
     const [showExerciseTimer, setShowExerciseTimer] = useState(false)
+    const [showStartTimer, setShowStartTimer] = useState(true)
     // const [exercise, setExercise] = useState(null)
 
     // useEffect(() => {
@@ -47,11 +49,12 @@ function Workout(props) {
     }
 
     const practiceSetTimeout = () => {
+        showStartTimer === true && setInterval(() => setShowStartTimer(false, setShowExerciseTimer(true)), props.restTime);
         showRestTimer === true && setInterval(() => setShowRestTimer(false, setShowExerciseTimer(true)), props.restTime);
         showExerciseTimer === true && setInterval(() => setShowExerciseTimer(false, setShowRestTimer(true)), props.exerciseTime)
         return (
             <>
-                {showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null}
+                {showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null || showStartTimer ? <StartTimer /> : null}
                 <DisplayGif exercise={props.exercisesAsRounds[0]} />
             </>
         )
