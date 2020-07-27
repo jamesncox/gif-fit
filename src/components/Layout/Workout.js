@@ -20,26 +20,17 @@ function Workout(props) {
     const [showStartTimer, setShowStartTimer] = useState(true)
     const [showExerciseTimer, setShowExerciseTimer] = useState(false)
     const [showRestTimer, setShowRestTimer] = useState(false)
-    const [exerciseObj, setExerciseObj] = useState(props.exercisesAsRounds[0])
+    const [exerciseIndex, setExerciseIndex] = useState(0)
 
-    // useEffect(() => {
-    //     for (let i; i < props.exercisesAsRounds.length; i++) {
-    //         console.log(props.exercisesAsRounds[i])
-    //         const something = setInterval(() => setExerciseObj(props.exercisesAsRounds[i]), props.restTime + props.exerciseTime + 10000)
-    //         return () => clearInterval(something)
-    //     }
-    // }, [setExerciseObj, props.exercisesAsRounds, props.restTime, props.exerciseTime])
-
-    const generateWorkout = () => {
-        let i = 0
-
-        let workoutObj = props.exercisesAsRounds[i++ % props.exercisesAsRounds.length]
-        setExerciseObj(workoutObj)
-        setInterval(function () {
-            let workoutObj = props.exercisesAsRounds[i++ % props.exercisesAsRounds.length]
-            setExerciseObj(workoutObj)
-        }, 10000 + props.exerciseTime)
-    }
+    useEffect(() => {
+        if (exerciseIndex === 0) {
+            const interval = setInterval(() => setExerciseIndex(exerciseIndex + 1), props.exerciseTime + 10000)
+            return () => clearInterval(interval)
+        } else {
+            const interval = setInterval(() => setExerciseIndex(exerciseIndex + 1), props.exerciseTime + props.restTime)
+            return () => clearInterval(interval)
+        }
+    }, [exerciseIndex, setExerciseIndex, props.exerciseTime, props.restTime])
 
     const fireStartTimer = () => {
         const startTimer = showStartTimer === true && setTimeout(() => setShowStartTimer(false, setShowExerciseTimer(true)), 10000)
@@ -50,25 +41,39 @@ function Workout(props) {
     }
 
     const showTimers = () => {
-        // generateWorkout()
-        showRestTimer === true && setInterval(() => setShowRestTimer(false, setShowExerciseTimer(true)), props.restTime)
-        showExerciseTimer === true && setInterval(() => setShowExerciseTimer(false, setShowRestTimer(true)), props.exerciseTime)
+        const restTimer = showRestTimer === true && setInterval(() => setShowRestTimer(false, setShowExerciseTimer(true)), props.restTime)
+        const exerciseTimer = showExerciseTimer === true && setInterval(() => setShowExerciseTimer(false, setShowRestTimer(true)), props.exerciseTime)
+        if (exerciseIndex > props.exercisesAsRounds.lastIndexOf(props.exercisesAsRounds[props.exercisesAsRounds.length - 1])) {
+            clearTimeout(restTimer, exerciseTimer)
+        }
 
-        return (
-            <>
-                {showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null}
-                {/* <DisplayGif exercise={exerciseObj} /> */}
-            </>
-        )
+        if (exerciseIndex > props.exercisesAsRounds.lastIndexOf(props.exercisesAsRounds[props.exercisesAsRounds.length - 1])) {
+            return (
+                null
+            )
+        } else {
+            return (
+                showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null
+            )
+        }
     }
 
-    return (
-        <Box className={classes.root}>
-            {fireStartTimer()}
-            {showTimers()}
-            <DisplayGif exercise={exerciseObj} />
-        </Box>
-    )
+    if (exerciseIndex > props.exercisesAsRounds.lastIndexOf(props.exercisesAsRounds[props.exercisesAsRounds.length - 1])) {
+        return (
+            <Box className={classes.root}>
+                {fireStartTimer()}
+                {showTimers()}
+            </Box>
+        )
+    } else {
+        return (
+            <Box className={classes.root}>
+                {fireStartTimer()}
+                {showTimers()}
+                <DisplayGif exercise={props.exercisesAsRounds[exerciseIndex]} />
+            </Box>
+        )
+    }
 }
 
 const mapStateToProps = state => ({
