@@ -399,5 +399,15 @@
             "upper-body",
             "core"
         ]
+    },
+    {
+        "id": 39,
+        "gif": "step-back-lunges.gif",
+        "name": "Step Back Lunges",
+        "description": "With hands raised by head and feet together, step back with one leg and lowering the opposite leg into a lunge, stand back up and repeat on other side",
+        "modified": "Hold onto a wall or study object to help balance as you lunge",
+        "focus": [
+            "lower-body"
+        ]
     }
 ]
