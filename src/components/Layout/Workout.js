@@ -44,11 +44,11 @@ function Workout(props) {
     // }
 
     const fireStartTimer = () => {
-        const startTimer = showStartTimer === true && setInterval(() => setShowStartTimer(false, setShowExerciseTimer(true)), 10000)
+        const startTimer = showStartTimer === true && setTimeout(() => setShowStartTimer(false, setShowExerciseTimer(true)), 10000)
         if (showStartTimer === true) {
             return <StartTimer />
         }
-        clearInterval(startTimer)
+        clearTimeout(startTimer)
     }
 
     const showTimers = () => {

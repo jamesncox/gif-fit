@@ -64,6 +64,7 @@ function SelectExerciseTime(props) {
                     onChange={handleChange}
                     autoWidth={true}
                 >
+                    <MenuItem value={4000}>4 sec</MenuItem>
                     <MenuItem value={20000}>20 sec</MenuItem>
                     <MenuItem value={30000}>30 sec</MenuItem>
                     <MenuItem value={40000}>40 sec</MenuItem>

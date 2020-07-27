@@ -63,6 +63,7 @@ function SelectRestTime(props) {
                     onChange={handleChange}
                     autoWidth={true}
                 >
+                    <MenuItem value={2000}>2 sec</MenuItem>
                     <MenuItem value={10000}>10 sec</MenuItem>
                     <MenuItem value={15000}>15 sec</MenuItem>
                     <MenuItem value={20000}>20 sec</MenuItem>
