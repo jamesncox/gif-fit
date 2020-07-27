@@ -377,5 +377,16 @@
         "focus": [
             "core"
         ]
+    },
+    {
+        "id": 37,
+        "gif": "wall-squat.gif",
+        "name": "Wall Squat",
+        "description": "With back flat against wall, lower body until your knees are bent at a 45 degree angle and hold for duration of round",
+        "modified": "Lessen the angle of your squat, stand up to take breaks",
+        "focus": [
+            "lower-body",
+            "core"
+        ]
     }
 ]
