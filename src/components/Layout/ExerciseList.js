@@ -23,6 +23,12 @@ const useStyles = makeStyles((theme) => ({
     cardRoot: {
         width: 200,
         textAlign: "center",
+        [theme.breakpoints.up('sm')]: {
+            width: 300,
+        },
+        [theme.breakpoints.up('md')]: {
+            width: 400,
+        },
     },
     link: {
         color: "#ba68c8"
