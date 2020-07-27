@@ -31,7 +31,7 @@ function ExerciseTimer(props) {
     return (
         <Box className={classes.root}>
             <Typography className={classes.header}>
-                GO!
+                WORK OUT!
             </Typography>
             <Typography className={classes.time}>
                 {Math.floor(counter / 60).toString()}:{(counter % 60).toString().padStart(2, '0')}
