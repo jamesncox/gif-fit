@@ -357,5 +357,15 @@
             "lower-body",
             "upper-body"
         ]
+    },
+    {
+        "id": 34,
+        "gif": "leg-extension-and-raise.gif",
+        "name": "Leg Extension and Raise",
+        "description": "Lying on your back, hands on the floor for support, first extend your legs out in front of you, off the ground, then pull them into your body, raise your legs straight up and lift your hips, slowly lower your legs straight over the ground",
+        "modified": "Place your hands under your lower back for support",
+        "focus": [
+            "core"
+        ]
     }
 ]
