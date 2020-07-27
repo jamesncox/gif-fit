@@ -25,7 +25,7 @@ function RestTimer(props) {
 
     useEffect(() => {
         const timeout = counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
-        return () => clearInterval(timeout);
+        return () => clearInterval(timeout)
     }, [counter])
 
     return (
