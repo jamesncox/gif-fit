@@ -7,6 +7,7 @@ import RestTimer from '../Timer/RestTimer'
 import ExerciseTimer from '../Timer/ExerciseTimer'
 import StartTimer from '../Timer/StartTimer'
 import DisplayGif from '../Gifs/DisplayGif'
+import AllDone from '../Gifs/AllDone'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -63,6 +64,7 @@ function Workout(props) {
             <Box className={classes.root}>
                 {fireStartTimer()}
                 {showTimers()}
+                <AllDone />
             </Box>
         )
     } else {
