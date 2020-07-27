@@ -34,13 +34,13 @@ function Workout(props) {
     // }, [generateWorkout, props.exercises, props.restTime, props.exerciseTime, showExerciseTimer, showRestTimer])
 
     const generateWorkout = () => {
-        for (let i; i < props.exercises.length; i++) {
+        for (let i; i < props.exercisesAsRounds.length; i++) {
             showRestTimer === true && setInterval(() => setShowRestTimer(false, setShowExerciseTimer(true)), props.restTime);
             showExerciseTimer === true && setInterval(() => setShowExerciseTimer(false, setShowRestTimer(true)), props.exerciseTime)
             return (
                 <>
                     {showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null}
-                    <DisplayGif exercise={props.exercises[i]} />
+                    <DisplayGif exercise={props.exercisesAsRounds[i]} />
                 </>
             )
         }
@@ -52,7 +52,7 @@ function Workout(props) {
         return (
             <>
                 {showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null}
-                <DisplayGif exercise={props.exercises[0]} />
+                <DisplayGif exercise={props.exercisesAsRounds[0]} />
             </>
         )
     }
@@ -70,7 +70,7 @@ const mapStateToProps = state => ({
     exerciseTime: state.params.exerciseTime,
     restTime: state.params.restTime,
     numberOfRounds: state.params.numberOfRounds,
-    exercises: state.params.exercises
+    exercisesAsRounds: state.params.exercisesAsRounds
 })
 
 export default connect(mapStateToProps)(Workout)
