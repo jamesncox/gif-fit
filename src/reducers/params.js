@@ -8,7 +8,7 @@ import {
     SET_EXERCISE_ROUNDS
 } from '../actionTypes'
 
-import data from '../data/data.json'
+import data from '../data/dataURL.json'
 
 export default (state = {
     numberOfExercises: null,

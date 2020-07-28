@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
 function ExerciseList(props) {
     const classes = useStyles();
-    const img = require.context('../../assets/', true);
+    // const img = require.context('../../assets/', true);
     const [open, setOpen] = useState(false);
 
     const handleClickOpen = () => {
@@ -83,7 +83,8 @@ function ExerciseList(props) {
                                 />
                                 <CardMedia
                                     className={classes.media}
-                                    image={img(`./${exercise.gif}`)}
+                                    // image={img(`./${exercise.gif}`)}
+                                    image={exercise.gif}
                                     title={exercise.name}
                                 />
                             </Card >

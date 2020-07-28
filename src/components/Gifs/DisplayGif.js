@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function DisplayGif(props) {
     const classes = useStyles();
-    const img = require.context('../../assets/', false, /\.(gif)$/)
+    // const img = require.context('../../assets/', false, /\.(gif)$/)
 
     return (
         <Card className={classes.root} >
@@ -35,7 +35,8 @@ export default function DisplayGif(props) {
             />
             <CardMedia
                 className={classes.media}
-                image={img(`./${props.exercise.gif}`)}
+                // image={img(`./${props.exercise.gif}`)}
+                image={props.exercise.gif}
                 title={props.exercise.name}
             />
             <CardContent>
