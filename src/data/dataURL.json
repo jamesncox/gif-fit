@@ -306,6 +306,16 @@
         ]
     },
     {
+        "id": 30,
+        "gif": "https://media1.giphy.com/media/3HAsGD9FFDCLhxOpf4/giphy.gif",
+        "name": "Russian Twists",
+        "description": "Seated on the floor, raise feet off the ground, twist with hands together and touch the floor on one side, then the other",
+        "modified": "Keep your feet on the floor",
+        "focus": [
+            "core"
+        ]
+    },
+    {
         "id": 31,
         "gif": "https://media0.giphy.com/media/yxfL4q5OyaCXyEfp4g/giphy.gif?cid=ecf05e473950556f4f4e90157e84959b6c4115bb1f0850e3&rid=giphy.gif",
         "name": "Rock the Boat",
