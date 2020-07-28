@@ -12,7 +12,7 @@
     },
     {
         "id": 2,
-        "gif": "burpees.webp",
+        "gif": "burpees.gif",
         "name": "Burpees",
         "description": "Lower body to ground all the way, as you perform a push-up, jump up straight. Repeat for duration of round.",
         "modified": "Lift up from ground without push-up, less intense jump",
@@ -24,7 +24,7 @@
     },
     {
         "id": 3,
-        "gif": "split-squat-jumps.webp",
+        "gif": "split-squat-jumps.gif",
         "name": "Split Squat Jumps",
         "description": "Alternate legs as you jump into a lunge and switch feet after each jump",
         "modified": "Step into each lunge instead of jumping",
@@ -45,7 +45,7 @@
     },
     {
         "id": 5,
-        "gif": "mountain-climbers.webp",
+        "gif": "mountain-climbers.gif",
         "name": "Mountain Climbers",
         "description": "In a plank, quickly bring knees to chest, alternating legs",
         "modified": "Decrease speed, lower range of motion",
@@ -57,7 +57,7 @@
     },
     {
         "id": 6,
-        "gif": "jump-knee-tucks.webp",
+        "gif": "jump-knee-tucks.gif",
         "name": "Jump Knee Tucks",
         "description": "Jump up and bring knees as high to chest as possible. Repeat quickly",
         "modified": "Jump lower, bringing knees up less high and jump slower",
@@ -68,7 +68,7 @@
     },
     {
         "id": 7,
-        "gif": "high-knees.webp",
+        "gif": "high-knees.gif",
         "name": "High Knees",
         "description": "Run in place, bringing knees up to your waist line",
         "modified": "Run slower, bringing knees up less high",
@@ -90,7 +90,7 @@
     },
     {
         "id": 9,
-        "gif": "modified-burpee.webp",
+        "gif": "modified-burpee.gif",
         "name": "Modified burpee",
         "description": "Jump down, with hands on floor and extend legs behind you, stand back up",
         "modified": "Place hands on floor and step legs behind you, stand back up",
@@ -112,7 +112,7 @@
     },
     {
         "id": 11,
-        "gif": "controlled-pushup.webp",
+        "gif": "controlled-pushup.gif",
         "name": "Controlled Push-ups",
         "description": "Perform a push-up, slow and controlled, lowering body until chest touches ground, and mainting good form the entire time",
         "modified": "Perform push-up keeping knees on the ground",
@@ -123,7 +123,7 @@
     },
     {
         "id": 12,
-        "gif": "military-pushup.webp",
+        "gif": "military-pushup.gif",
         "name": "Military Push-ups",
         "description": "Hands directly underneath shoulders, elbows pointing back, perform push, lowering body the ground",
         "modified": "Perform push-up keeping knees on the ground",
@@ -144,7 +144,7 @@
     },
     {
         "id": 14,
-        "gif": "toe-touch-pushup.webp",
+        "gif": "toe-touch-pushup.gif",
         "name": "Toe Touch Push-up",
         "description": "Perform push-up, then tap right toe followed by left toe",
         "modified": "Perform push-up and toe taps with knees on ground",
@@ -155,7 +155,7 @@
     },
     {
         "id": 15,
-        "gif": "alternating-forward-lunges.webp",
+        "gif": "alternating-forward-lunges.gif",
         "name": "Alternating Forward Lunges",
         "description": "Lunge forward with right leg, keeping knee behind toe, stand back up, and lunge with left leg. Repeat",
         "modified": "Hold onto wall or something stable for balance",
@@ -165,7 +165,7 @@
     },
     {
         "id": 16,
-        "gif": "plank-touch-and-reach.webp",
+        "gif": "plank-touch-and-reach.gif",
         "name": "Plank Touch and Reach",
         "description": "In a plank, first touch your opposite shoulder, then reach hand up to sky, and come back to plank and do other hand",
         "modified": "Only touch shoulders, no reach, or only do the reach and do not touch shoulder",
@@ -175,7 +175,7 @@
     },
     {
         "id": 17,
-        "gif": "knee-to-elbow-plank.webp",
+        "gif": "knee-to-elbow-plank.gif",
         "name": "Knee to Elbow Plank",
         "description": "Plank with forearms on ground, alternate bringing knee towards same-side elbow, medium pace and controlled",
         "modified": "Do not exaggerate knee to elbow movement",
@@ -226,7 +226,7 @@
     },
     {
         "id": 22,
-        "gif": "plank-crossbody-hold.webp",
+        "gif": "plank-crossbody-hold.gif",
         "name": "Cross-body Plank with Hold",
         "description": "Hands on floor plank, reach under opposite arm, touch body and hold, repeat on other side",
         "modified": "Perform plank and hold with knees touching ground",
@@ -236,7 +236,7 @@
     },
     {
         "id": 23,
-        "gif": "half-plank-shoulder-touch.webp",
+        "gif": "half-plank-shoulder-touch.gif",
         "name": "Half Plank Shoulder Touch",
         "description": "With hands on feet on ground, touch right shoulder with left hand, and then left shoulder with right hand",
         "modified": "Slightly lift left then right hand off the floor. Don't touch shoulders",
@@ -246,7 +246,7 @@
     },
     {
         "id": 24,
-        "gif": "plank-jacks.webp",
+        "gif": "plank-jacks.gif",
         "name": "Plank Jacks",
         "description": "Plank with forearms on ground, jump toes out then in in a jumping-jack style motion",
         "modified": "In the plank, step toes out and in one at a time, lower range of motion",
@@ -348,7 +348,7 @@
     },
     {
         "id": 34,
-        "gif": "side-to-side-burpees.webp",
+        "gif": "side-to-side-burpees.gif",
         "name": "Side to Side Burpees",
         "description": "Lower body to ground all the way, as you perform a push-up, jump up to the left, repeat motion, jumping back to the right. Alternate back and forth",
         "modified": "Step to the side instead of jumping",
