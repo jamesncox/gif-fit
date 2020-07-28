@@ -39,7 +39,7 @@ export default function DisplayGif(props) {
             />
             <CardMedia
                 className={classes.media}
-                image={require("../../assets/ron-swanson-proud.gif")}
+                image={"https://media1.giphy.com/media/fdyZ3qI0GVZC0/giphy.gif?cid=ecf05e47juretdjwa883r97kifgq0589p0bch05camwk533k&rid=giphy.gif"}
                 title="Ron Swanson I'm really proud of you"
             />
             <CardContent>
