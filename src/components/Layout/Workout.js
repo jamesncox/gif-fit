@@ -23,6 +23,7 @@ function Workout(props) {
     const [showRestTimer, setShowRestTimer] = useState(false)
     const [exerciseIndex, setExerciseIndex] = useState(0)
 
+    // Set the intervals for displaying each gif index based on exercise and rest times
     useEffect(() => {
         if (exerciseIndex === 0) {
             const interval = setInterval(() => setExerciseIndex(exerciseIndex + 1), (props.exerciseTime + 10000))
@@ -33,15 +34,23 @@ function Workout(props) {
         }
     }, [exerciseIndex, setExerciseIndex, props.exerciseTime, props.restTime])
 
-    // const generateWorkout = () => {
-    //     if (exerciseIndex === 0) {
-    //         const interval = setInterval(() => setExerciseIndex(exerciseIndex + 1), props.exerciseTime + 10000)
-    //         return () => clearInterval(interval)
-    //     } else {
-    //         const interval = setInterval(() => setExerciseIndex(exerciseIndex + 1), props.exerciseTime + props.restTime)
-    //         return () => clearInterval(interval)
-    //     }
-    // }
+    // Display the initial start timer and set to false when 10 seconds is over, set exercise timer to true
+    // useEffect(() => {
+    //     const startTimer = showStartTimer === true && setInterval(() => setShowStartTimer(false, setShowExerciseTimer(true)), 10000)
+    //     return () => clearInterval(startTimer)
+    // })
+
+    // Display the exercise timer and set it to false when exercise time is complete, set rest timer to true
+    useEffect(() => {
+        const exerciseTimer = showExerciseTimer === true && setInterval(() => setShowExerciseTimer(false, setShowRestTimer(true)), props.exerciseTime)
+        return () => clearInterval(exerciseTimer)
+    })
+
+    // Display the rest timer and set it to false when rest time is complete, set exercise back to true
+    useEffect(() => {
+        const restTimer = showRestTimer === true && setInterval(() => setShowRestTimer(false, setShowExerciseTimer(true)), props.restTime)
+        return () => clearInterval(restTimer)
+    })
 
     const fireStartTimer = () => {
         const startTimer = showStartTimer === true && setTimeout(() => setShowStartTimer(false, setShowExerciseTimer(true)), 10000)
@@ -51,24 +60,21 @@ function Workout(props) {
         clearTimeout(startTimer)
     }
 
-    const showTimers = () => {
-        const restTimer = showRestTimer === true && setInterval(() => setShowRestTimer(false, setShowExerciseTimer(true)), props.restTime)
-        const exerciseTimer = showExerciseTimer === true && setInterval(() => setShowExerciseTimer(false, setShowRestTimer(true)), props.exerciseTime)
+    // const fireExerciseTimer = () => {
+    //     const exerciseTimer = showExerciseTimer === true && setInterval(() => setShowExerciseTimer(false, setShowRestTimer(true)), props.exerciseTime)
+    //     if (showExerciseTimer === true) {
+    //         return <ExerciseTimer />
+    //     }
+    //     clearTimeout(exerciseTimer)
+    // }
 
-        if (exerciseIndex > props.exercisesAsRounds.lastIndexOf(props.exercisesAsRounds[props.exercisesAsRounds.length - 1])) {
-            clearInterval(restTimer, exerciseTimer)
-        }
-
-        if (exerciseIndex > props.exercisesAsRounds.lastIndexOf(props.exercisesAsRounds[props.exercisesAsRounds.length - 1])) {
-            return (
-                null
-            )
-        } else {
-            return (
-                showRestTimer ? <RestTimer /> : null || showExerciseTimer ? <ExerciseTimer /> : null
-            )
-        }
-    }
+    // const fireRestTimer = () => {
+    //     const restTimer = showRestTimer === true && setInterval(() => setShowRestTimer(false, setShowExerciseTimer(true)), props.restTime)
+    //     if (showRestTimer === true) {
+    //         return <RestTimer />
+    //     }
+    //     clearTimeout(restTimer)
+    // }
 
     if (exerciseIndex > props.exercisesAsRounds.lastIndexOf(props.exercisesAsRounds[props.exercisesAsRounds.length - 1])) {
         return (
@@ -79,9 +85,12 @@ function Workout(props) {
     } else {
         return (
             <Box className={classes.root}>
-                {/* {generateWorkout()} */}
                 {fireStartTimer()}
-                {showTimers()}
+                {/* {fireExerciseTimer()} */}
+                {/* {fireRestTimer()} */}
+                {/* {showStartTimer ? <StartTimer /> : null} */}
+                {showExerciseTimer ? <ExerciseTimer /> : null}
+                {showRestTimer ? <RestTimer /> : null}
                 <DisplayGif exercise={props.exercisesAsRounds[exerciseIndex]} />
             </Box>
         )
