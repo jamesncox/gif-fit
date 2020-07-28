@@ -10,8 +10,8 @@
 
 # production
 /build
-assets/
-data/data.json
+/src/assets/
+/src/data/data.json
 
 # misc
 .DS_Store
