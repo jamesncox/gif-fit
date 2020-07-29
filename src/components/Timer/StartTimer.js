@@ -24,22 +24,22 @@ export default function StartTimer() {
 
     useEffect(() => {
         const interval = counter > 0 && setInterval(() => setCounter(counter - 1), 1000)
-        return () => clearInterval(interval);
+        return () => clearInterval(interval)
     }, [counter])
 
     // useEffect(() => {
     //     let start = counter
+    //     const count = (start) => {
 
-    //     const count = () => {
-    //         if (counter <= 0) return
     //         const timeout = setTimeout(() => {
     //             start--
     //             setCounter(start)
-    //             count()
+    //             console.log(start)
     //         }, 1000)
     //         return () => clearTimeout(timeout)
     //     }
-    //     count()
+
+    //     if (start > 1) count(start)
     // }, [counter])
 
     return (
