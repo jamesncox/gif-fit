@@ -21,11 +21,11 @@ const useStyles = makeStyles((theme) => ({
 
 function ExerciseTimer(props) {
     const classes = useStyles()
-    const [counter, setCounter] = useState(props.exerciseTime / 1000);
+    const [counter, setCounter] = useState(props.exerciseTime / 1000)
 
     useEffect(() => {
-        const timeout = counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
-        return () => clearInterval(timeout);
+        const interval = counter > 0 && setInterval(() => setCounter(counter - 1), 1000)
+        return () => clearInterval(interval)
     }, [counter])
 
     return (
