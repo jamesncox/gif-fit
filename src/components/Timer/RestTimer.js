@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
+import UIfx from 'uifx'
+import StartBeep from '../../sounds/long beep high tone.wav'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -28,8 +30,21 @@ function RestTimer(props) {
         return () => clearInterval(interval)
     }, [counter])
 
+    const startBeep = new UIfx(
+        StartBeep,
+        {
+            volume: .04,
+            throttleMs: 10
+        }
+    )
+
+    const playBeep = () => {
+        startBeep.play()
+    }
+
     return (
         <Box className={classes.root}>
+            {counter === (props.restTime / 1000) ? playBeep() : null}
             <Typography className={classes.header}>
                 Rest
             </Typography>
