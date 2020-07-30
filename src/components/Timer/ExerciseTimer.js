@@ -4,8 +4,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
 import UIfx from 'uifx'
-import StartBeep from '../../sounds/long beep high tone.wav'
-import Beep from '../../sounds/short beep medium tone.wav'
+import StartBeep from '../../sounds/triple start beep.wav'
+import Beep from '../../sounds/very short beep low.wav'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -34,7 +34,15 @@ function ExerciseTimer(props) {
     const startBeep = new UIfx(
         StartBeep,
         {
-            volume: .04,
+            volume: .06,
+            throttleMs: 50
+        }
+    )
+
+    const beep = new UIfx(
+        Beep,
+        {
+            volume: .1,
             throttleMs: 50
         }
     )
@@ -42,14 +50,6 @@ function ExerciseTimer(props) {
     const playStartBeep = () => {
         startBeep.play()
     }
-
-    const beep = new UIfx(
-        Beep,
-        {
-            volume: .07,
-            throttleMs: 50
-        }
-    )
 
     const playBeep = () => {
         beep.play()

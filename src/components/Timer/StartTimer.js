@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
 import UIfx from 'uifx'
-import Beep from '../../sounds/short beep medium tone.wav'
+import Beep from '../../sounds/very short beep low.wav'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -32,7 +32,7 @@ export default function StartTimer() {
     const beep = new UIfx(
         Beep,
         {
-            volume: .06,
+            volume: .1,
             throttleMs: 50
         }
     )
