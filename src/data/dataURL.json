@@ -409,5 +409,16 @@
         "focus": [
             "lower-body"
         ]
+    },
+    {
+        "id": 40,
+        "gif": "https://i.gifer.com/B0lR.gif",
+        "name": "Lateral Leaps",
+        "description": "Jump to the side landing on one leg, bringing the opposite knee to your chest, then jump to the other leg. Try to cover some distance",
+        "modified": "Don't jump as far, don't bring knee all the way to your chest",
+        "focus": [
+            "lower-body",
+            "cardio"
+        ]
     }
 ]
