@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
+import Beep from '../Audio/Beep'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -30,6 +31,7 @@ function ExerciseTimer(props) {
 
     return (
         <Box className={classes.root}>
+            <Beep />
             <Typography className={classes.header}>
                 WORK OUT!
             </Typography>
