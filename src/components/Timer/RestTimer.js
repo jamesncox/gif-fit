@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
 import UIfx from 'uifx'
 import StartBeep from '../../sounds/long beep high tone.wav'
+import Beep from '../../sounds/short beep medium tone.wav'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -34,17 +35,32 @@ function RestTimer(props) {
         StartBeep,
         {
             volume: .04,
-            throttleMs: 10
+            throttleMs: 50
+        }
+    )
+
+    const playStartBeep = () => {
+        startBeep.play()
+    }
+
+    const beep = new UIfx(
+        Beep,
+        {
+            volume: .05,
+            throttleMs: 50
         }
     )
 
     const playBeep = () => {
-        startBeep.play()
+        beep.play()
     }
 
     return (
         <Box className={classes.root}>
-            {counter === (props.restTime / 1000) ? playBeep() : null}
+            {counter === (props.restTime / 1000) ? playStartBeep() : null}
+            {counter === 3 ? playBeep() : null}
+            {counter === 2 ? playBeep() : null}
+            {counter === 1 ? playBeep() : null}
             <Typography className={classes.header}>
                 Rest
             </Typography>
