@@ -431,5 +431,15 @@
             "core",
             "upper-body"
         ]
+    },
+    {
+        "id": 42,
+        "gif": "https://media3.giphy.com/media/uGP4yfwMnf8Tm/giphy.gif?cid=ecf05e47cc9e4026dc1c0c103dc5c90233bf6158e7243121&rid=giphy.gif",
+        "name": "Jackknife Sit Ups",
+        "description": "With arms and legs off the ground, bring hands up to head then bend at waist and reach to touch your toes, extend back with arms by your head",
+        "modified": "Bend your knees to reduce motion",
+        "focus": [
+            "core"
+        ]
     }
 ]
