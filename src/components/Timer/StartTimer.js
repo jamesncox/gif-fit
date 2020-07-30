@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
+import UIfx from 'uifx'
+import Beep from '../../sounds/beep-07.wav'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -26,6 +28,20 @@ export default function StartTimer() {
         const interval = counter > 0 && setInterval(() => setCounter(counter - 1), 1000)
         return () => clearInterval(interval)
     }, [counter])
+
+    const beep = new UIfx(
+        Beep,
+        {
+            volume: .05,
+            throttleMs: 50
+        }
+    )
+
+    useEffect(() => {
+        if (counter === 3) beep.play()
+        if (counter === 2) beep.play()
+        if (counter === 1) beep.play()
+    }, [counter, beep])
 
     // useEffect(() => {
     //     let start = counter

@@ -3,7 +3,9 @@ import { connect } from 'react-redux'
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
-import BeepSound from '../../sounds/Double start beep.mp3'
+import UIfx from 'uifx'
+import TripleBeep from '../../sounds/triple start beep.wav'
+import Beep from '../../sounds/beep-07.wav'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -24,21 +26,40 @@ function ExerciseTimer(props) {
     const classes = useStyles()
     const [counter, setCounter] = useState(props.exerciseTime / 1000)
 
-    let audio = new Audio(BeepSound)
-
-    useEffect(() => {
-        if (props.exerciseTime / 1000 === counter) {
-            return () => audio.play()
-        }
-    })
-
     useEffect(() => {
         const interval = counter > 0 && setInterval(() => setCounter(counter - 1), 1000)
         return () => clearInterval(interval)
     }, [counter])
 
+    const tripleBeep = new UIfx(
+        TripleBeep,
+        {
+            volume: .02,
+            throttleMs: 50
+        }
+    )
+
+    const playBeep = () => {
+        tripleBeep.play()
+    }
+
+    const beep = new UIfx(
+        Beep,
+        {
+            volume: .05,
+            throttleMs: 50
+        }
+    )
+
+    useEffect(() => {
+        if (counter === 3) beep.play()
+        if (counter === 2) beep.play()
+        if (counter === 1) beep.play()
+    }, [counter, beep])
+
     return (
         <Box className={classes.root}>
+            {counter === (props.exerciseTime / 1000) ? playBeep() : null}
             <Typography className={classes.header}>
                 WORK OUT!
             </Typography>
