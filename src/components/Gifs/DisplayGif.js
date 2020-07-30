@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 600,
         [theme.breakpoints.up('md')]: {
-            width: 700,
+            minWidth: 600,
         },
     },
     header: {
@@ -28,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function DisplayGif(props) {
     const classes = useStyles();
-    // const img = require.context('../../assets/', false, /\.(gif)$/)
 
     return (
         <Card className={classes.root} >
@@ -38,7 +37,6 @@ export default function DisplayGif(props) {
             />
             <CardMedia
                 className={classes.media}
-                // image={img(`./${props.exercise.gif}`)}
                 image={props.exercise.gif}
                 title={props.exercise.name}
             />
