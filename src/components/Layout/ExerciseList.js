@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
-import { SET_EXERCISES } from '../../actionTypes'
+import {
+    SET_EXERCISES,
+    SET_EXERCISE_ROUNDS
+} from '../../actionTypes'
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
@@ -76,6 +79,7 @@ function ExerciseList(props) {
 
     const handleReloadExercises = () => {
         props.setExercises()
+        props.setExerciseRounds()
     }
 
     return (
@@ -122,7 +126,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-    setExercises: () => dispatch({ type: SET_EXERCISES })
+    setExercises: () => dispatch({ type: SET_EXERCISES }),
+    setExerciseRounds: () => dispatch({ type: SET_EXERCISE_ROUNDS }),
 })
 
 

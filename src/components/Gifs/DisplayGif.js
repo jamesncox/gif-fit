@@ -9,6 +9,9 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 600,
+        [theme.breakpoints.up('md')]: {
+            width: 700,
+        },
     },
     header: {
         color: "#ba68c8"
