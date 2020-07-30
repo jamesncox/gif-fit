@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
-// import Beep from '../Audio/Beep'
 import BeepSound from '../../sounds/Double start beep.mp3'
 
 const useStyles = makeStyles((theme) => ({
