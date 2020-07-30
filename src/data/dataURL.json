@@ -420,5 +420,16 @@
             "lower-body",
             "cardio"
         ]
+    },
+    {
+        "id": 41,
+        "gif": "https://media2.giphy.com/media/H3kyniitkDEZ0KhhAe/giphy.gif",
+        "name": "Ultra Low Plank",
+        "description": "With hands and feet on floor, lower yourself as close to the ground without your chest touching the ground and hold plank",
+        "modified": "Take rest breaks as needed, lower body to rest on ground for 2-3 seconds",
+        "focus": [
+            "core",
+            "upper-body"
+        ]
     }
 ]
