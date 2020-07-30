@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
+import { SET_EXERCISES } from '../../actionTypes'
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
@@ -8,6 +9,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
+import AutorenewIcon from '@material-ui/icons/Autorenew';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -45,12 +47,23 @@ const useStyles = makeStyles((theme) => ({
     text: {
         marginTop: theme.spacing(1),
         color: "#ba68c8"
+    },
+    iconContent: {
+        textAlign: "center",
+        marginBottom: theme.spacing(1)
+    },
+    button: {
+        color: "#7e57c2",
+        fontSize: ".8rem",
+        fontFamily: "'Exo', sans-serif",
+    },
+    icon: {
+        marginRight: theme.spacing(1)
     }
 }));
 
 function ExerciseList(props) {
     const classes = useStyles();
-    // const img = require.context('../../assets/', true);
     const [open, setOpen] = useState(false);
 
     const handleClickOpen = () => {
@@ -59,7 +72,11 @@ function ExerciseList(props) {
 
     const handleClose = () => {
         setOpen(false);
-    };
+    }
+
+    const handleReloadExercises = () => {
+        props.setExercises()
+    }
 
     return (
         <Box className={classes.root}>
@@ -73,6 +90,11 @@ function ExerciseList(props) {
                 aria-describedby="alert-dialog-description"
             >
                 <DialogContent>
+                    <DialogContent className={classes.iconContent}>
+                        <Button className={classes.button} onClick={handleReloadExercises}>
+                            <AutorenewIcon className={classes.icon} /> Reload
+                        </Button>
+                    </DialogContent>
                     {props.exercises.map(exercise => {
                         return (
                             <Card key={exercise.id} className={classes.cardRoot} >
@@ -83,7 +105,6 @@ function ExerciseList(props) {
                                 />
                                 <CardMedia
                                     className={classes.media}
-                                    // image={img(`./${exercise.gif}`)}
                                     image={exercise.gif}
                                     title={exercise.name}
                                 />
@@ -100,4 +121,9 @@ const mapStateToProps = state => ({
     exercises: state.params.exercises
 })
 
-export default connect(mapStateToProps)(ExerciseList)
+const mapDispatchToProps = dispatch => ({
+    setExercises: () => dispatch({ type: SET_EXERCISES })
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(ExerciseList)

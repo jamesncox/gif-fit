@@ -27,7 +27,18 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center"
     },
     link: {
-        color: "#ba68c8"
+        color: "#ba68c8",
+        fontWeight: "bold"
+    },
+    grayText: {
+        marginTop: theme.spacing(4),
+        fontFamily: "'Exo', sans-serif",
+        color: "#9e9e9e",
+        textAlign: "center"
+    },
+    grayLink: {
+        color: "#bdbdbd",
+        fontWeight: "bold"
     }
 }));
 
@@ -82,6 +93,25 @@ export default function MoreInfoButton(props) {
                     </DialogContentText>
                     <DialogContentText id="alert-dialog-description" className={classes.text}>
                         Good luck and happy fitness!
+                    </DialogContentText>
+                    <DialogContentText id="alert-dialog-description" className={classes.grayText}>
+                        Special thanks and credit to
+                        <Link
+                            className={classes.grayLink}
+                            underline="none"
+                            rel="noopener noreferrer"
+                            href="https://8fit.com/"
+                            target="_blank"> 8fit{' '}
+                        </Link>
+                        for the exercises and
+                        <Link
+                            className={classes.grayLink}
+                            underline="none"
+                            rel="noopener noreferrer"
+                            href="https://giphy.com/"
+                            target="_blank"> Giphy
+                        </Link>{' '}
+                        for access to all the gifs featured in this app.
                     </DialogContentText>
                 </DialogContent>
             </Dialog>
