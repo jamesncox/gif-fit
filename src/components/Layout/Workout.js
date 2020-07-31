@@ -83,7 +83,7 @@ function Workout(props) {
                 <Typography className={classes.awake}>KEEP SCREEN AWAKE?</Typography>
                 <ReactNoSleep>
                     {({ isOn, enable, disable }) => (
-                        <Button className={classes.button} onClick={isOn ? disable : enable}>
+                        <Button className={classes.button} onClick={isOn ? disable : enable} >
                             {isOn ? <CheckCircleIcon /> : <HighlightOffIcon />}
                         </Button>
                     )}

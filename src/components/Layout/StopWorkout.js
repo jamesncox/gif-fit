@@ -1,12 +1,13 @@
-import React from 'react';
-import { withStyles, makeStyles } from '@material-ui/core/styles';
+import React from 'react'
+import { connect } from 'react-redux'
 import {
     IS_ACTIVE_FALSE,
     CLEAR_PARAMS
 } from '../../actionTypes'
+
+import { withStyles, makeStyles } from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button';
 import { deepPurple } from '@material-ui/core/colors';
-import { connect } from 'react-redux';
 
 const ColorButton = withStyles((theme) => ({
     root: {

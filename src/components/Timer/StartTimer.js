@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
-import Beep from '../../sounds/very short beep low.wav'
 import UIfx from 'uifx'
+import StartBeep from '../../sounds/triple start beep.wav'
+import Beep from '../../sounds/very short beep low.wav'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -37,6 +38,18 @@ export default function StartTimer() {
         }
     )
 
+    const startBeep = new UIfx(
+        StartBeep,
+        {
+            volume: .001,
+            throttleMs: 50
+        }
+    )
+
+    const playStartBeep = () => {
+        startBeep.play()
+    }
+
     const playBeep = () => {
         beep.play()
     }
@@ -58,6 +71,7 @@ export default function StartTimer() {
 
     return (
         <Box className={classes.root}>
+            {counter === 10 ? playStartBeep() : null}
             {counter === 3 ? playBeep() : null}
             {counter === 2 ? playBeep() : null}
             {counter === 1 ? playBeep() : null}
