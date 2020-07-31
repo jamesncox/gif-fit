@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles'
 import Box from '@material-ui/core/Box'
+import Button from '@material-ui/core/Button';
 
 import RestTimer from '../Timer/RestTimer'
 import ExerciseTimer from '../Timer/ExerciseTimer'
@@ -9,11 +10,19 @@ import StartTimer from '../Timer/StartTimer'
 import DisplayGif from '../Gifs/DisplayGif'
 import AllDone from '../Gifs/AllDone'
 
+import ReactNoSleep from 'react-no-sleep'
+
 const useStyles = makeStyles((theme) => ({
     root: {
         textAlign: "center",
         alignSelf: "center",
     },
+    button: {
+        marginTop: theme.spacing(2),
+        color: "#7e57c2",
+        fontSize: ".8rem",
+        fontFamily: "'Exo', sans-serif",
+    }
 }));
 
 function Workout(props) {
@@ -65,6 +74,13 @@ function Workout(props) {
                 {showExerciseTimer ? <ExerciseTimer /> : null}
                 {showRestTimer ? <RestTimer /> : null}
                 <DisplayGif exercise={props.exercisesAsRounds[exerciseIndex]} />
+                <ReactNoSleep>
+                    {({ isOn, enable, disable }) => (
+                        <Button className={classes.button} onClick={isOn ? disable : enable}>
+                            Keep Screen Awake? {isOn ? 'On' : 'Off'}
+                        </Button>
+                    )}
+                </ReactNoSleep>
             </Box>
         )
     }
