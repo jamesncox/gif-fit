@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box'
 import UIfx from 'uifx'
-import StartBeep from '../../sounds/triple start beep.wav'
+// import StartBeep from '../../sounds/triple start beep.wav'
 import Beep from '../../sounds/very short beep low.wav'
 
 const useStyles = makeStyles((theme) => ({
