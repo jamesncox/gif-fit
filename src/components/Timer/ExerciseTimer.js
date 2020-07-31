@@ -34,7 +34,7 @@ function ExerciseTimer(props) {
     const startBeep = new UIfx(
         StartBeep,
         {
-            volume: .06,
+            volume: .9,
             throttleMs: 50
         }
     )
@@ -42,7 +42,7 @@ function ExerciseTimer(props) {
     const beep = new UIfx(
         Beep,
         {
-            volume: .1,
+            volume: 1,
             throttleMs: 50
         }
     )
