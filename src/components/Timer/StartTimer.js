@@ -38,17 +38,17 @@ export default function StartTimer() {
         }
     )
 
-    const startBeep = new UIfx(
-        StartBeep,
-        {
-            volume: .01,
-            throttleMs: 50
-        }
-    )
+    // const startBeep = new UIfx(
+    //     StartBeep,
+    //     {
+    //         volume: .01,
+    //         throttleMs: 50
+    //     }
+    // )
 
-    const playStartBeep = () => {
-        startBeep.play()
-    }
+    // const playStartBeep = () => {
+    //     startBeep.play()
+    // }
 
     const playBeep = () => {
         beep.play()
@@ -71,7 +71,7 @@ export default function StartTimer() {
 
     return (
         <Box className={classes.root}>
-            {counter === 10 ? playStartBeep() : null}
+            {/* {counter === 10 ? playStartBeep() : null} */}
             {counter === 3 ? playBeep() : null}
             {counter === 2 ? playBeep() : null}
             {counter === 1 ? playBeep() : null}
