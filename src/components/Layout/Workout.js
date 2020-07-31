@@ -1,26 +1,32 @@
 import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
-import { makeStyles } from '@material-ui/core/styles'
-import Box from '@material-ui/core/Box'
-import Button from '@material-ui/core/Button';
 
 import RestTimer from '../Timer/RestTimer'
 import ExerciseTimer from '../Timer/ExerciseTimer'
 import StartTimer from '../Timer/StartTimer'
 import DisplayGif from '../Gifs/DisplayGif'
 import AllDone from '../Gifs/AllDone'
-
 import ReactNoSleep from 'react-no-sleep'
+
+import { makeStyles } from '@material-ui/core/styles'
+import Box from '@material-ui/core/Box'
+import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography'
+import CheckCircleIcon from '@material-ui/icons/CheckCircle'
+import HighlightOffIcon from '@material-ui/icons/HighlightOff'
 
 const useStyles = makeStyles((theme) => ({
     root: {
         textAlign: "center",
         alignSelf: "center",
     },
-    button: {
+    awake: {
         marginTop: theme.spacing(2),
         color: "#7e57c2",
-        fontSize: ".8rem",
+        fontFamily: "'Exo', sans-serif",
+    },
+    button: {
+        color: "#7e57c2",
         fontFamily: "'Exo', sans-serif",
     }
 }));
@@ -74,10 +80,11 @@ function Workout(props) {
                 {showExerciseTimer ? <ExerciseTimer /> : null}
                 {showRestTimer ? <RestTimer /> : null}
                 <DisplayGif exercise={props.exercisesAsRounds[exerciseIndex]} />
+                <Typography className={classes.awake}>KEEP SCREEN AWAKE?</Typography>
                 <ReactNoSleep>
                     {({ isOn, enable, disable }) => (
                         <Button className={classes.button} onClick={isOn ? disable : enable}>
-                            Keep Screen Awake? {isOn ? 'On' : 'Off'}
+                            {isOn ? <CheckCircleIcon /> : <HighlightOffIcon />}
                         </Button>
                     )}
                 </ReactNoSleep>
