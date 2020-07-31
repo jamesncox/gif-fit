@@ -41,7 +41,7 @@ export default function StartTimer() {
     const startBeep = new UIfx(
         StartBeep,
         {
-            volume: .001,
+            volume: .01,
             throttleMs: 50
         }
     )
