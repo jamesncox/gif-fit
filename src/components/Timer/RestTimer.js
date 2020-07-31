@@ -34,7 +34,7 @@ function RestTimer(props) {
     const startBeep = new UIfx(
         StartBeep,
         {
-            volume: .9,
+            volume: 1,
             throttleMs: 50
         }
     )
