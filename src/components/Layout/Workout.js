@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { connect } from 'react-redux'
 
 import RestTimer from '../Timer/RestTimer'
@@ -38,7 +38,15 @@ const useStyles = makeStyles((theme) => ({
         top: theme.spacing(1),
         color: "#ba68c8"
     },
-}));
+}))
+
+function usePrevious(value) {
+    const ref = useRef()
+    useEffect(() => {
+        ref.current = value;
+    })
+    return ref.current
+}
 
 function Workout(props) {
     const classes = useStyles()
@@ -46,8 +54,10 @@ function Workout(props) {
     const [showExerciseTimer, setShowExerciseTimer] = useState(false)
     const [showRestTimer, setShowRestTimer] = useState(false)
     const [exerciseIndex, setExerciseIndex] = useState(0)
-    const [round, setRound] = useState(1)
+    const [round, setRound] = useState(0)
     const [flag, setFlag] = useState(false)
+
+    const prevExerciseIndex = usePrevious(exerciseIndex)
 
     // Set the intervals for increasing gif index based on exercise and rest times
     useEffect(() => {
@@ -82,13 +92,13 @@ function Workout(props) {
         if (props.numberOfRounds === 1) {
             setRound(1)
             setFlag(false)
-        } else if ((exerciseIndex + 1) % props.numberOfExercises === 0 && flag === false) {
+        } else if ((exerciseIndex) % props.numberOfExercises === 0 && flag === false) {
             setRound(round + 1)
             setFlag(true)
-        } else if ((exerciseIndex) % props.numberOfExercises === 0 && flag === true) {
+        } else if ((exerciseIndex) % props.numberOfExercises !== 0 && flag === true) {
             setFlag(false)
         }
-    }, [flag, setFlag, round, setRound, exerciseIndex, props.numberOfRounds, props.numberOfExercises])
+    }, [flag, setFlag, round, setRound, exerciseIndex, prevExerciseIndex, props.numberOfRounds, props.numberOfExercises])
 
     if (exerciseIndex > props.exercisesAsRounds.lastIndexOf(props.exercisesAsRounds[props.exercisesAsRounds.length - 1])) {
         return (
@@ -100,9 +110,13 @@ function Workout(props) {
     } else {
         return (
             <Box className={classes.root}>
-                <Typography className={classes.title}>
-                    Round {round}
-                </Typography>
+                {props.numberOfExercises === 1
+                    ?
+                    <Title />
+                    :
+                    <Typography className={classes.title}>
+                        Round {round}
+                    </Typography>}
                 {showStartTimer ? <StartTimer /> : null}
                 {showExerciseTimer ? <ExerciseTimer /> : null}
                 {showRestTimer ? <RestTimer /> : null}
