@@ -88,13 +88,13 @@ function Workout(props) {
         return () => clearInterval(restTimer)
     }, [showRestTimer, setShowRestTimer, setShowExerciseTimer, props.restTime])
 
+    // Update setRound with various conditions by user selected numberOfExercises / numberOfRounds
     useEffect(() => {
         if (props.numberOfRounds === 1) {
             setRound(1)
             setFlag(false)
         } else if (props.numberOfExercises === 1 && flag === false) {
             setRound(exerciseIndex + 1)
-            // setFlag(true)
         } else if ((exerciseIndex) % props.numberOfExercises === 0 && flag === false) {
             setRound(round + 1)
             setFlag(true)
@@ -113,10 +113,10 @@ function Workout(props) {
     } else {
         return (
             <Box className={classes.root}>
-                {props.numberOfExercises === 1
+                {round === props.numberOfRounds
                     ?
                     <Typography className={classes.title}>
-                        Round {round}
+                        Last Round!
                     </Typography>
                     :
                     <Typography className={classes.title}>
