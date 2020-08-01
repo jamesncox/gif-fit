@@ -92,6 +92,9 @@ function Workout(props) {
         if (props.numberOfRounds === 1) {
             setRound(1)
             setFlag(false)
+        } else if (props.numberOfExercises === 1 && flag === false) {
+            setRound(exerciseIndex + 1)
+            // setFlag(true)
         } else if ((exerciseIndex) % props.numberOfExercises === 0 && flag === false) {
             setRound(round + 1)
             setFlag(true)
@@ -112,7 +115,9 @@ function Workout(props) {
             <Box className={classes.root}>
                 {props.numberOfExercises === 1
                     ?
-                    <Title />
+                    <Typography className={classes.title}>
+                        Round {round}
+                    </Typography>
                     :
                     <Typography className={classes.title}>
                         Round {round}
