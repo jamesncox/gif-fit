@@ -31,7 +31,6 @@ function Home(props) {
     if (props.isActive === true) {
         return (
             <div className={classes.root}>
-                <Title />
                 <Workout />
                 <StopWorkout />
             </div>
