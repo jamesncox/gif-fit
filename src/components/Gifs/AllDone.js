@@ -29,12 +29,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function DisplayGif(props) {
     const classes = useStyles();
-    // const img = require.context('../../assets/', true);
 
     return (
         <Card className={classes.root} >
             <CardHeader
-                title="You did it!"
+                title="YOU DID IT!"
                 className={classes.header}
             />
             <CardMedia
@@ -43,18 +42,9 @@ export default function DisplayGif(props) {
                 title="Ron Swanson I'm really proud of you"
             />
             <CardContent>
-                {/* <Typography className={classes.text}>
-                    Description
-                </Typography> */}
                 <Typography variant="body2" color="textSecondary" component="p">
                     Make sure to cool down, stretch and drink plenty of water!
                 </Typography>
-                {/* <Typography className={classes.text}>
-                    Modified
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                    {props.exercise.modified}
-                </Typography> */}
             </CardContent>
         </Card >
     );
