@@ -1,6 +1,6 @@
 [
     {
-        "id": 100,
+        "id": 101,
         "gif": "https://media2.giphy.com/media/kDMm05TnS3AVtWAt2Y/giphy.gif",
         "name": "Renegade Rows",
         "description": "In a plank, holding dumbbells, perform push-up, then bring right dumbbell up to your chest. Perform another push-up and repeat with left hand.",
@@ -11,7 +11,7 @@
         ]
     },
     {
-        "id": 101,
+        "id": 102,
         "gif": "https://media0.giphy.com/media/KETFFNHKsvvWNFLLMT/giphy.gif",
         "name": "Step-back Lunge and Curl",
         "description": "Holding dumbbells by your side, step back with right leg into a lunge, curling the dumbbells simultaneously. Repeat with left leg.",
@@ -22,7 +22,7 @@
         ]
     },
     {
-        "id": 102,
+        "id": 103,
         "gif": "https://media1.giphy.com/media/KFhZdoI492u6XZJnPA/giphy.gif",
         "name": "Dumbbell Squat, Clean and Press",
         "description": "Dumbbells by your side, curl dumbbells up to your shoulders, perform a squat and as you come back up, press the dumbbells above head. Lower dumbbells back to your side and repeat.",
@@ -30,6 +30,16 @@
         "focus": [
             "upper-body",
             "lower-body"
+        ]
+    },
+    {
+        "id": 104,
+        "gif": "https://media2.giphy.com/media/joezpxFp6tZSqTcYmy/giphy.gif",
+        "name": "Bent-over Dumbbell Fly",
+        "description": "Knees slightly bent, bend over at 45 degree angle, dumbbells hanging in front of you, raise your arms out to your side, hold for a moment and bring back down",
+        "modified": "Use less weight, don't raise your arms as high and/or don't perform isometric hold",
+        "focus": [
+            "upper-body"
         ]
     }
 ]
