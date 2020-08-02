@@ -41,7 +41,7 @@ export default (state = {
                     const j = Math.floor(Math.random() * (i + 1));
                     [a[i], a[j]] = [a[j], a[i]];
                 }
-                return a.slice(0, state.numberOfExercises);
+                return a.slice(10, state.numberOfExercises + 10);
             }
 
             const randomExercises = shuffle(data)
