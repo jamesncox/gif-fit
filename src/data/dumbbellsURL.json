@@ -10,17 +10,26 @@
             "upper-body"
         ]
     },
-    [
-        {
-            "id": 101,
-            "gif": "https://media0.giphy.com/media/KETFFNHKsvvWNFLLMT/giphy.gif",
-            "name": "Step-back Lunge and Curl",
-            "description": "Holding dumbbells by your side, step back with right leg into a lunge, curling the dumbbells simultaneously. Repeat with left leg.",
-            "modified": "Use less weight and don't lunge as deeply",
-            "focus": [
-                "lower-body",
-                "upper-body"
-            ]
-        }
-    ]
+    {
+        "id": 101,
+        "gif": "https://media0.giphy.com/media/KETFFNHKsvvWNFLLMT/giphy.gif",
+        "name": "Step-back Lunge and Curl",
+        "description": "Holding dumbbells by your side, step back with right leg into a lunge, curling the dumbbells simultaneously. Repeat with left leg.",
+        "modified": "Use less weight and don't lunge as deeply",
+        "focus": [
+            "lower-body",
+            "upper-body"
+        ]
+    },
+    {
+        "id": 102,
+        "gif": "https://media1.giphy.com/media/KFhZdoI492u6XZJnPA/giphy.gif",
+        "name": "Dumbbell Squat, Clean and Press",
+        "description": "Dumbbells by your side, curl dumbbells up to your shoulders, perform a squat and as you come back up, press the dumbbells above head. Lower dumbbells back to your side and repeat.",
+        "modified": "Use less weight, don't squat as deeply and you don't have to perform the press",
+        "focus": [
+            "upper-body",
+            "lower-body"
+        ]
+    }
 ]
