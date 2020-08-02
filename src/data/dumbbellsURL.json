@@ -13,11 +13,14 @@
     [
         {
             "id": 101,
-            "gif": "",
-            "name": "",
-            "description": "",
-            "modified": "",
-            "focus": []
+            "gif": "https://media0.giphy.com/media/KETFFNHKsvvWNFLLMT/giphy.gif",
+            "name": "Step-back Lunge and Curl",
+            "description": "Holding dumbbells by your side, step back with right leg into a lunge, curling the dumbbells simultaneously. Repeat with left leg.",
+            "modified": "Use less weight and don't lunge as deeply",
+            "focus": [
+                "lower-body",
+                "upper-body"
+            ]
         }
     ]
 ]
