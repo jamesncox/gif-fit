@@ -1,0 +1,23 @@
+[
+    {
+        "id": 100,
+        "gif": "https://media2.giphy.com/media/kDMm05TnS3AVtWAt2Y/giphy.gif",
+        "name": "Renegade Rows",
+        "description": "In a plank, holding dumbbells, perform push-up, then bring right dumbbell up to your chest. Perform another push-up and repeat with left hand.",
+        "modified": "Use less weight and/or keep knees on ground",
+        "focus": [
+            "core",
+            "upper-body"
+        ]
+    },
+    [
+        {
+            "id": 101,
+            "gif": "",
+            "name": "",
+            "description": "",
+            "modified": "",
+            "focus": []
+        }
+    ]
+]
