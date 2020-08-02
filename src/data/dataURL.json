@@ -435,9 +435,19 @@
     {
         "id": 42,
         "gif": "https://media3.giphy.com/media/uGP4yfwMnf8Tm/giphy.gif?cid=ecf05e47cc9e4026dc1c0c103dc5c90233bf6158e7243121&rid=giphy.gif",
-        "name": "Jackknife Sit Ups",
+        "name": "Jackknife Sit-ups",
         "description": "With arms and legs off the ground, bring hands up to head then bend at waist and reach to touch your toes, extend back with arms by your head",
         "modified": "Bend your knees to reduce motion",
+        "focus": [
+            "core"
+        ]
+    },
+    {
+        "id": 43,
+        "gif": "https://media0.giphy.com/media/l41YqRErqxgRhXbUI/giphy.gif?cid=ecf05e478f42c4a95ce3ae26108921265ec1a9a44286025e&rid=giphy.gif",
+        "name": "Bicycle Sit-ups",
+        "description": "Lying on your back, hands by head, touch your right elbow to your left knee, then your left elbow to your right knee",
+        "modified": "Decrease range of motion and rate of movement",
         "focus": [
             "core"
         ]
