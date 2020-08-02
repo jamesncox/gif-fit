@@ -1,10 +1,10 @@
 # Gif To Do
 
-[] Save the most recent gif additions to data.json / local folder in case gifs get removed
 [] Find and add MORE gif exercises.
 [] Try and find a replacement gif for lateral-lunges. Don't like the initial title screen
 [] Find the better toe-toucher with a woman
 [x] Try and find a replacement gif for plank-hip-dips. She pauses too much
+[x] Save the most recent gif additions to data.json / local folder in case gifs get removed
 
 # Design To Do
 
