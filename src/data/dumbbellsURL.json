@@ -36,8 +36,18 @@
         "id": 104,
         "gif": "https://media2.giphy.com/media/joezpxFp6tZSqTcYmy/giphy.gif",
         "name": "Bent-over Dumbbell Fly",
-        "description": "Knees slightly bent, bend over at 45 degree angle, dumbbells hanging in front of you, raise your arms out to your side, hold for a moment and bring back down",
+        "description": "Knees slightly bent, bend over at 45 degree angle, dumbbells hanging in front of you, raise your arms out to your side, hold for a moment and bring back down.",
         "modified": "Use less weight, don't raise your arms as high and/or don't perform isometric hold",
+        "focus": [
+            "upper-body"
+        ]
+    },
+    {
+        "id": 105,
+        "gif": "https://media3.giphy.com/media/1jaMgsSZJqAhB14hn0/giphy.gif",
+        "name": "Curls",
+        "description": "Standing straight, holding dumbbells with wrists facing away from your body, slowly curl dumbbells to your shoulders, hold for a moment and lower back down. Repeat.",
+        "modified": "Use less weight and raise the dumbbells to a comfortable position",
         "focus": [
             "upper-body"
         ]
