@@ -102,5 +102,15 @@
         "focus": [
             "core"
         ]
+    },
+    {
+        "id": 111,
+        "gif": "https://media0.giphy.com/media/xT0Gqd3edBgA6sES5O/giphy.gif",
+        "name": "Shoulder Press",
+        "description": "With dumbbells resting on each shoulder, extend arms straight up and rotate arms so the dumbbells create a line, lower back to shoulders",
+        "modified": "Use less weight, add a small bounce in your knees/hips to generate momentum",
+        "focus": [
+            "upper-body"
+        ]
     }
 ]
