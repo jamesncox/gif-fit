@@ -132,5 +132,15 @@
         "focus": [
             "upper-body"
         ]
+    },
+    {
+        "id": 114,
+        "gif": "https://media2.giphy.com/media/xT8qBrjcngCsejZ0mA/giphy.gif",
+        "name": "Walking Weighted Lunges",
+        "description": "Holding dumbbells by your side, perform a lunge, and as you come up, bring the other leg forward immediately into a lunge, repeat until you run out of room, then turn and come back the other way.",
+        "modified": "Use less weight, don't lunge as deeply",
+        "focus": [
+            "lower-body"
+        ]
     }
 ]
