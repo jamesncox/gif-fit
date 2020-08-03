@@ -81,5 +81,16 @@
         "focus": [
             "upper-body"
         ]
+    },
+    {
+        "id": 109,
+        "gif": "https://media3.giphy.com/media/1n6exUWUnxvyzkYAaG/giphy.gif",
+        "name": "Plank Rows",
+        "description": "In a plank, holding dumbbells, raise one dumbbell to your chest then return dumbbell to the floor and raise the other dumbbell. Repeat.",
+        "modified": "Use less weight and/or keep knees on ground",
+        "focus": [
+            "core",
+            "upper-body"
+        ]
     }
 ]
