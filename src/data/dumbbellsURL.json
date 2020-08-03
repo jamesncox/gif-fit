@@ -61,5 +61,15 @@
         "focus": [
             "upper-body"
         ]
+    },
+    {
+        "id": 107,
+        "gif": "https://media0.giphy.com/media/9sk5PmdcUSUGwXsovA/giphy.gif",
+        "name": "Side Dumbbell Shoulder Raises",
+        "description": "With dumbbells by your side, keep your arms straight and raise your arms out to the side until they are perpendicular to the floor, hold for a moment and lower back to your side.",
+        "modified": "Use less weight and raise the dumbbells less high",
+        "focus": [
+            "upper-body"
+        ]
     }
 ]
