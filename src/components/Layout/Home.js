@@ -42,11 +42,11 @@ function Home(props) {
                 <Title />
                 <Subtitle />
                 <MoreInfoButton />
+                <SelectDumbbells />
                 <SelectExerciseNumber />
                 <SelectExerciseTime />
                 <SelectRestTime />
                 <SelectRoundNumber />
-                <SelectDumbbells />
                 {props.restTime && props.numberOfExercises && props.exerciseTime && props.numberOfRounds ? <StartWorkout /> : null}
                 {props.restTime && props.numberOfExercises && props.exerciseTime && props.numberOfRounds ? <DisplayTotalTime /> : null}
             </div>

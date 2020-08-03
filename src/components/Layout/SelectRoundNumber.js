@@ -17,10 +17,10 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center"
     },
     button: {
+        marginTop: theme.spacing(2),
         fontSize: ".9rem",
         fontFamily: "'Exo', sans-serif",
         color: "#ba68c8",
-        marginTop: theme.spacing(2),
         alignSelf: "center",
         width: 235
     },

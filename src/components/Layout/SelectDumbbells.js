@@ -14,9 +14,9 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center"
     },
     checkbox: {
+        marginTop: theme.spacing(2),
         fontFamily: "'Exo', sans-serif",
         color: "#ba68c8",
-        marginTop: theme.spacing(2),
         alignSelf: "center",
     },
     label: {
@@ -52,7 +52,6 @@ export default function SelectDumbbells() {
                 className={classes.checkbox}
                 control={<PurpleCheckBox checked={state.checkedG} onChange={handleChange} name="checked" />}
                 label={<Typography className={classes.label}>INCLUDE DUMBBELLS?</Typography>}
-            // size="small"
             />
         </FormGroup>
     );
