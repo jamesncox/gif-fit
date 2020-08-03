@@ -6,13 +6,13 @@ import {
     SET_EXERCISES,
     SET_EXERCISE_ROUNDS
 } from '../../actionTypes'
-import { withStyles } from '@material-ui/core/styles';
-import { makeStyles } from '@material-ui/core/styles';
-import { deepPurple } from '@material-ui/core/colors';
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
-import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
+import { deepPurple } from '@material-ui/core/colors'
+import FormGroup from '@material-ui/core/FormGroup'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import Checkbox from '@material-ui/core/Checkbox'
+import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -51,7 +51,7 @@ function SelectDumbbells(props) {
 
     const handleChange = (event) => {
         setState({ ...state, checked: event.target.checked })
-        console.log(state.checked)
+
         if (state.checked === false) {
             props.includeDumbbells()
             props.setExercises()
@@ -61,7 +61,7 @@ function SelectDumbbells(props) {
             props.setExercises()
             props.setExerciseRounds()
         }
-    };
+    }
 
     return (
         <FormGroup row className={classes.root}>
