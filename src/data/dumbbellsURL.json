@@ -142,5 +142,15 @@
         "focus": [
             "lower-body"
         ]
+    },
+    {
+        "id": 115,
+        "gif": "https://media1.giphy.com/media/hPrHa0hRFQGOtdqhG2/giphy.gif",
+        "name": "Goblet Squats",
+        "description": "Holding one dumbell between both hands in front of your chest, perform deep squat, making sure to keep knees behind your toes and back straight",
+        "modified": "Use less weight, don't squat as deeply",
+        "focus": [
+            "lower-body"
+        ]
     }
 ]
