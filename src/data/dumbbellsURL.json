@@ -92,5 +92,15 @@
             "core",
             "upper-body"
         ]
+    },
+    {
+        "id": 110,
+        "gif": "https://media1.giphy.com/media/J0DBsawoq4hLLKzk8M/giphy.gif",
+        "name": "Weighted Russian Twists",
+        "description": "Seated on the floor, hold one dumbell with both hands, feet off the ground, slowly rotate your body to one side then the other keeping the dumbbell in front of you",
+        "modified": "Use less weight and don't rotate as completely",
+        "focus": [
+            "core"
+        ]
     }
 ]
