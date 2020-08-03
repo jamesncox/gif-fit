@@ -97,7 +97,7 @@
         "id": 110,
         "gif": "https://media1.giphy.com/media/J0DBsawoq4hLLKzk8M/giphy.gif",
         "name": "Weighted Russian Twists",
-        "description": "Seated on the floor, hold one dumbell with both hands, feet off the ground, slowly rotate your body to one side then the other keeping the dumbbell in front of you",
+        "description": "Seated on the floor, hold one dumbell with both hands, feet off the ground, slowly rotate your body to one side then the other keeping the dumbbell in front of you.",
         "modified": "Use less weight and don't rotate as completely",
         "focus": [
             "core"
@@ -107,8 +107,18 @@
         "id": 111,
         "gif": "https://media0.giphy.com/media/xT0Gqd3edBgA6sES5O/giphy.gif",
         "name": "Shoulder Press",
-        "description": "With dumbbells resting on each shoulder, extend arms straight up and rotate arms so the dumbbells create a line, lower back to shoulders",
+        "description": "With dumbbells resting on each shoulder, extend arms straight up and rotate arms so the dumbbells create a line, lower back to shoulders.",
         "modified": "Use less weight, add a small bounce in your knees/hips to generate momentum",
+        "focus": [
+            "upper-body"
+        ]
+    },
+    {
+        "id": 112,
+        "gif": "https://media0.giphy.com/media/T99mVqeaxxkcy5uAiv/giphy.gif",
+        "name": "Floor Press",
+        "description": "Back on the ground, feet flat on the floor, butt slightly off the ground, hold dumbbells to your side, elbows bent, and press the dumbbells straight up together, then lower back to the ground.",
+        "modified": "Use less weight, don't raise butt off floor, don't extend arms as high",
         "focus": [
             "upper-body"
         ]
