@@ -13,7 +13,7 @@
     {
         "id": 102,
         "gif": "https://media0.giphy.com/media/KETFFNHKsvvWNFLLMT/giphy.gif",
-        "name": "Step-back Lunge and Curl",
+        "name": "Step-Back Lunge and Curl",
         "description": "Holding dumbbells by your side, step back with right leg into a lunge, curling the dumbbells simultaneously. Repeat with left leg.",
         "modified": "Use less weight and don't lunge as deeply",
         "focus": [
@@ -35,7 +35,7 @@
     {
         "id": 104,
         "gif": "https://media2.giphy.com/media/joezpxFp6tZSqTcYmy/giphy.gif",
-        "name": "Bent-over Dumbbell Fly",
+        "name": "Bent-Over Dumbbell Fly",
         "description": "Knees slightly bent, bend over at a 45 degree angle, dumbbells hanging in front of you, raise your arms out to your side, hold for a moment and bring back down.",
         "modified": "Use less weight, don't raise your arms as high and/or don't perform isometric hold",
         "focus": [
@@ -55,7 +55,7 @@
     {
         "id": 106,
         "gif": "https://media1.giphy.com/media/kI4FVPzGiyXXOYt8hw/giphy.gif",
-        "name": "Bent-over Tricep Extensions",
+        "name": "Bent-Over Tricep Extensions",
         "description": "Knees slightly bent, bend over at 90 degree angle, elbows tucked up by your back, dumbbells hanging down by your side, slowly extend arms back until they are straight, hold and lower dumbbells back down.",
         "modified": "Decrease the angle of your body and don't raise your elbows as high",
         "focus": [
@@ -119,6 +119,16 @@
         "name": "Floor Press",
         "description": "Back on the ground, feet flat on the floor, butt slightly off the ground, hold dumbbells to your side, elbows bent, and press the dumbbells straight up together, then lower back to the ground.",
         "modified": "Use less weight, don't raise butt off floor, don't extend arms as high",
+        "focus": [
+            "upper-body"
+        ]
+    },
+    {
+        "id": 113,
+        "gif": "https://media0.giphy.com/media/3oEjHM9hzerMdVjYWI/giphy.gif",
+        "name": "Bent-Over Rows",
+        "description": "Knees slightly bent, bend over at a 45 degree angle, hold dumbbells in front of you and to the side, raise your elbows up to your back and dumbbells level with your chest, return dumbbells back in front of you",
+        "modified": "Use less weight, don't bend over as deeply, don't raise your elbows all the way to your back",
         "focus": [
             "upper-body"
         ]
