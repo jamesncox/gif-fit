@@ -5,12 +5,16 @@ import {
     SET_NUMBER_OF_ROUNDS,
     CLEAR_PARAMS,
     SET_EXERCISES,
-    SET_EXERCISE_ROUNDS
+    SET_EXERCISE_ROUNDS,
+    INCLUDE_DUMBBELLS,
+    EXCLUDE_DUMBBELLS
 } from '../actionTypes'
 
-import data from '../data/dataURL.json'
+import exerciseData from '../data/dataURL.json'
+import dumbbellData from '../data/dumbbellsURL.json'
 
 export default (state = {
+    currentData: exerciseData,
     numberOfExercises: null,
     exerciseTime: null,
     restTime: null,
@@ -44,7 +48,7 @@ export default (state = {
                 return a.slice(10, state.numberOfExercises + 10);
             }
 
-            const randomExercises = shuffle(data)
+            const randomExercises = shuffle(state.currentData)
             return { ...state, exercises: randomExercises }
 
         case SET_EXERCISE_ROUNDS:
@@ -54,6 +58,14 @@ export default (state = {
                     .reduce((a, b) => a.concat(b))
             const combinedExerciseArrays = duplicateArr(state.exercises, state.numberOfRounds)
             return { ...state, exercisesAsRounds: combinedExerciseArrays }
+
+        case INCLUDE_DUMBBELLS:
+            const mergedDumbbellAndExerciseData = dumbbellData.concat(state.currentData)
+            return { ...state, currentData: mergedDumbbellAndExerciseData }
+
+        case EXCLUDE_DUMBBELLS:
+            return { ...state, currentData: exerciseData }
+
         default:
             return state
     }

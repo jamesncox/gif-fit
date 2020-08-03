@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import { connect } from 'react-redux'
 import {
     INCLUDE_DUMBBELLS,
-    EXCLUDE_DUMBBELLS
+    EXCLUDE_DUMBBELLS,
+    SET_EXERCISES,
+    SET_EXERCISE_ROUNDS
 } from '../../actionTypes'
 import { withStyles } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
@@ -41,7 +43,7 @@ const PurpleCheckBox = withStyles({
     checked: {},
 })((props) => <Checkbox style={{ fontSize: ".1rem" }} color="default" {...props} />);
 
-function SelectDumbbells() {
+function SelectDumbbells(props) {
     const classes = useStyles();
     const [state, setState] = useState({
         checked: false,
@@ -51,9 +53,13 @@ function SelectDumbbells() {
         setState({ ...state, checked: event.target.checked })
         console.log(state.checked)
         if (state.checked === false) {
-
+            props.includeDumbbells()
+            props.setExercises()
+            props.setExerciseRounds()
         } else {
-
+            props.excludeDummbells()
+            props.setExercises()
+            props.setExerciseRounds()
         }
     };
 
@@ -70,7 +76,9 @@ function SelectDumbbells() {
 
 const mapDispatchToProps = dispatch => ({
     includeDumbbells: () => dispatch({ type: INCLUDE_DUMBBELLS }),
-    excludeDummbells: () => dispatch({ type: EXCLUDE_DUMBBELLS })
+    excludeDummbells: () => dispatch({ type: EXCLUDE_DUMBBELLS }),
+    setExercises: () => dispatch({ type: SET_EXERCISES }),
+    setExerciseRounds: () => dispatch({ type: SET_EXERCISE_ROUNDS }),
 })
 
 export default connect(null, mapDispatchToProps)(SelectDumbbells)
