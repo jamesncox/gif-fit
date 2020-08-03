@@ -1,4 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react'
+import { connect } from 'react-redux'
+import {
+    INCLUDE_DUMBBELLS,
+    EXCLUDE_DUMBBELLS
+} from '../../actionTypes'
 import { withStyles } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 import { deepPurple } from '@material-ui/core/colors';
@@ -36,23 +41,36 @@ const PurpleCheckBox = withStyles({
     checked: {},
 })((props) => <Checkbox style={{ fontSize: ".1rem" }} color="default" {...props} />);
 
-export default function SelectDumbbells() {
+function SelectDumbbells() {
     const classes = useStyles();
-    const [state, setState] = React.useState({
-        checked: true,
-    });
+    const [state, setState] = useState({
+        checked: false,
+    })
 
     const handleChange = (event) => {
-        setState({ ...state, [event.target.name]: event.target.checked });
+        setState({ ...state, checked: event.target.checked })
+        console.log(state.checked)
+        if (state.checked === false) {
+
+        } else {
+
+        }
     };
 
     return (
         <FormGroup row className={classes.root}>
             <FormControlLabel
                 className={classes.checkbox}
-                control={<PurpleCheckBox checked={state.checkedG} onChange={handleChange} name="checked" />}
+                control={<PurpleCheckBox checked={state.checked} onChange={handleChange} name="checked" />}
                 label={<Typography className={classes.label}>INCLUDE DUMBBELLS?</Typography>}
             />
         </FormGroup>
     );
 }
+
+const mapDispatchToProps = dispatch => ({
+    includeDumbbells: () => dispatch({ type: INCLUDE_DUMBBELLS }),
+    excludeDummbells: () => dispatch({ type: EXCLUDE_DUMBBELLS })
+})
+
+export default connect(null, mapDispatchToProps)(SelectDumbbells)
