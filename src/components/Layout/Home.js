@@ -11,6 +11,7 @@ import DisplayTotalTime from './DisplayTotalTime'
 import SelectRoundNumber from './SelectRoundNumber'
 import StopWorkout from './StopWorkout'
 import Workout from './Workout'
+import SelectDumbbells from './SelectDumbbells'
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -45,6 +46,7 @@ function Home(props) {
                 <SelectExerciseTime />
                 <SelectRestTime />
                 <SelectRoundNumber />
+                <SelectDumbbells />
                 {props.restTime && props.numberOfExercises && props.exerciseTime && props.numberOfRounds ? <StartWorkout /> : null}
                 {props.restTime && props.numberOfExercises && props.exerciseTime && props.numberOfRounds ? <DisplayTotalTime /> : null}
             </div>
