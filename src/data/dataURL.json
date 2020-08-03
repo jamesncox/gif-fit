@@ -36,7 +36,7 @@
     {
         "id": 4,
         "gif": "https://media0.giphy.com/media/7e3P2VsI7Js2c/giphy.gif?cid=ecf05e47wlmeootds5gb07o6gq93wp66ddkig89fo2jkbq9j&rid=giphy.gif",
-        "name": "Hand-release Push-ups",
+        "name": "Hand-Release Push-Ups",
         "description": "In push-up position, lower body all the way to the ground, lift hands off ground, then perform push-up",
         "modified": "Perform push-up keeping knees on the ground",
         "focus": [
@@ -113,7 +113,7 @@
     {
         "id": 11,
         "gif": "https://media3.giphy.com/media/4HgsfDIXY4F6cOnAK2/giphy.gif?cid=ecf05e47b08e01685776c6867ff97459ba9ab23368d1f5a6&rid=giphy.gif",
-        "name": "Controlled Push-ups",
+        "name": "Controlled Push-Ups",
         "description": "Perform a push-up, slow and controlled, lowering body until chest touches ground, and mainting good form the entire time",
         "modified": "Perform push-up keeping knees on the ground",
         "focus": [
@@ -124,7 +124,7 @@
     {
         "id": 12,
         "gif": "https://media1.giphy.com/media/ZA68nmuNOXBecacY4Z/giphy.gif?cid=ecf05e47151e37d7e7bc45a7880c7932b7a9a33855698be2&rid=giphy.gif",
-        "name": "Military Push-ups",
+        "name": "Military Push-Ups",
         "description": "Hands directly underneath shoulders, elbows pointing back, perform push, lowering body the ground",
         "modified": "Perform push-up keeping knees on the ground",
         "focus": [
@@ -145,7 +145,7 @@
     {
         "id": 14,
         "gif": "https://media3.giphy.com/media/kEL6G7ZR024IjJC1Hq/giphy.gif?cid=ecf05e47c095f014d839018eaa1e9d4afae759415da16c1d&rid=giphy.gif",
-        "name": "Toe Touch Push-up",
+        "name": "Toe Touch Push-Ups",
         "description": "Perform push-up, then tap right toe followed by left toe",
         "modified": "Perform push-up and toe taps with knees on ground",
         "focus": [
@@ -216,7 +216,7 @@
     {
         "id": 21,
         "gif": "https://media0.giphy.com/media/7zuAQ6ebll6maa2rBF/giphy.gif?cid=ecf05e47k3p5dl6ojwc7kj576o82e4k1ja4c3slvs5gvk6zo&rid=giphy.gif",
-        "name": "Push-up Plank",
+        "name": "Push-Up Plank",
         "description": "With forearms on floor in a plank, place right hand on floor, then left hand on floor, and walk back down. Repeat for duration of round",
         "modified": "Perform plank and moves with knees on ground",
         "focus": [
@@ -227,7 +227,7 @@
     {
         "id": 22,
         "gif": "https://media1.giphy.com/media/26BRyNmEefw26QTle/giphy.gif?cid=ecf05e47ed66f6decbdba30044ab5fbbdda6f91ee4a35867&rid=giphy.gif",
-        "name": "Cross-body Plank with Hold",
+        "name": "Cross-Body Plank with Hold",
         "description": "Hands on floor plank, reach under opposite arm, touch body and hold, repeat on other side",
         "modified": "Perform plank and hold with knees touching ground",
         "focus": [
@@ -267,7 +267,7 @@
     {
         "id": 26,
         "gif": "https://media1.giphy.com/media/7YCC7PTNX2TOhJQ6aW/giphy.gif?cid=ecf05e47k5osd7y6cu4jtj32cjnarainjjwzkks5j987ejkg&rid=giphy.gif",
-        "name": "Wide Grip Push-ups",
+        "name": "Wide Grip Push-Ups",
         "description": "Place hands further than shoulder-width apart and lower body til chest touches ground then push body up in explosive movement",
         "modified": "Peform push-up with knees on the ground",
         "focus": [
@@ -297,7 +297,7 @@
     {
         "id": 29,
         "gif": "https://media3.giphy.com/media/kdXScqzCfT5VmpgZ5Q/giphy.gif?cid=ecf05e47b73afbc56a900c6c3a1fb7e0c847392e559ae297&rid=giphy.gif",
-        "name": "180 Squat Jumps",
+        "name": "180 Degree Squat Jumps",
         "description": "Perform squat and as you jump, rotate 180 degrees to face the opposite direction, landing in a squat, and jump back the opposite direction",
         "modified": "Do not exaggerate the squat as deeply",
         "focus": [
@@ -435,7 +435,7 @@
     {
         "id": 42,
         "gif": "https://media3.giphy.com/media/uGP4yfwMnf8Tm/giphy.gif?cid=ecf05e47cc9e4026dc1c0c103dc5c90233bf6158e7243121&rid=giphy.gif",
-        "name": "Jackknife Sit-ups",
+        "name": "Jackknife Sit-Ups",
         "description": "With arms and legs off the ground, bring hands up to head then bend at waist and reach to touch your toes, extend back with arms by your head",
         "modified": "Bend your knees to reduce motion",
         "focus": [
@@ -445,7 +445,7 @@
     {
         "id": 43,
         "gif": "https://media0.giphy.com/media/l41YqRErqxgRhXbUI/giphy.gif?cid=ecf05e478f42c4a95ce3ae26108921265ec1a9a44286025e&rid=giphy.gif",
-        "name": "Bicycle Sit-ups",
+        "name": "Bicycle Sit-Ups",
         "description": "Lying on your back, hands by head, touch your right elbow to your left knee, then your left elbow to your right knee",
         "modified": "Decrease range of motion and rate of movement",
         "focus": [
