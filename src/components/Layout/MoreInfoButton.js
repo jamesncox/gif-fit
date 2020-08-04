@@ -71,9 +71,6 @@ export default function MoreInfoButton(props) {
                         exercises you can do right
                         from your home.
                     </DialogContentText>
-                    {/* <DialogContentText id="alert-dialog-description" className={classes.text}>
-                        All you have to do is tell GIF FIT how much time you want to work out.
-                    </DialogContentText> */}
                     <DialogContentText id="alert-dialog-description" className={classes.text}>
                         Choose the number of exercises, how long you
                         will perform each one, and the total number of rounds.
