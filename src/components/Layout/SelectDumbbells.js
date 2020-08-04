@@ -68,7 +68,7 @@ function SelectDumbbells(props) {
             <FormControlLabel
                 className={classes.checkbox}
                 control={<PurpleCheckBox checked={state.checked} onChange={handleChange} name="checked" />}
-                label={<Typography className={classes.label}>INCLUDE DUMBBELLS?</Typography>}
+                label={<Typography className={classes.label}>INCLUDE DUMBBELLS</Typography>}
             />
         </FormGroup>
     );
