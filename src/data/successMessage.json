@@ -10,5 +10,17 @@
         "gif": "https://media3.giphy.com/media/l0MYDGA3Du1hBR4xG/giphy.gif?cid=ecf05e47lk77hsccx48qafhjjr4t6psltemk02i3yy4zrfxe&rid=giphy.gif",
         "message": "YOU KILLED IT!",
         "title": "Deadpool is clapping"
+    },
+    {
+        "id": 203,
+        "gif": "https://media0.giphy.com/media/cmYdpi3iNUbp5qDyEc/giphy.gif?cid=ecf05e47aht5gmsiu9r8xspqmv3u04pwfdo6s843q9prag6w&rid=giphy.gif",
+        "message": "YOU FINISHED! GREAT JOB!",
+        "title": "Running man crosses the finish line"
+    },
+    {
+        "id": 204,
+        "gif": "https://media3.giphy.com/media/82IKB3BDY6PJ7o25b0/giphy.gif?cid=ecf05e47e906b8f21fc22cf5cf22dd9a985e48f46403b470&rid=giphy.gif",
+        "message": "YOU DESERVE A STANDING OVATION!",
+        "title": "Woman clapping slowly then more and more intensely"
     }
 ]
