@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center"
     },
     grayLink: {
-        color: "#bdbdbd",
+        color: "#9e9e9e",
         fontWeight: "bold"
     }
 }));
@@ -67,19 +67,19 @@ export default function MoreInfoButton(props) {
             >
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description" className={classes.text}>
-                        Gif Fit randomly selects
+                        GIF FIT randomly selects
                         exercises you can do right
                         from your home.
                     </DialogContentText>
-                    <DialogContentText id="alert-dialog-description" className={classes.text}>
-                        All you have to do is tell Gif Fit how much time you want to work out.
-                    </DialogContentText>
+                    {/* <DialogContentText id="alert-dialog-description" className={classes.text}>
+                        All you have to do is tell GIF FIT how much time you want to work out.
+                    </DialogContentText> */}
                     <DialogContentText id="alert-dialog-description" className={classes.text}>
                         Choose the number of exercises, how long you
                         will perform each one, and the total number of rounds.
                     </DialogContentText>
                     <DialogContentText id="alert-dialog-description" className={classes.text}>
-                        Gif Fit recommends resting for half the time
+                        GIF FIT recommends resting for half the time
                         you exercise (adhering to the
                         <Link
                             className={classes.link}
