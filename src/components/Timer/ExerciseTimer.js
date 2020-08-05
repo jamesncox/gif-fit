@@ -71,7 +71,8 @@ function ExerciseTimer(props) {
                 WORK OUT!
             </Typography>
             <Typography className={classes.time}>
-                {counter === 60 ? `${Math.floor(counter / 60).toString()}:${(counter % 60).toString().padStart(2, '0')}` : `:${(counter % 60).toString().padStart(2, '0')}`}
+                {/* {counter === 60 ? `${Math.floor(counter / 60).toString()}:${(counter % 60).toString().padStart(2, '0')}` : `:${(counter % 60).toString().padStart(2, '0')}`} */}
+                :{counter.toString().padStart(2, '0')}
             </Typography>
         </Box>
     )
