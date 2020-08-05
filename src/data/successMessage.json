@@ -34,5 +34,11 @@
         "gif": "https://media0.giphy.com/media/xUNda6syjHI5da4TsY/giphy.gif?cid=ecf05e47tqugaipom0xgwdbzbo13mcwbqfybjpl1vdle57qg&rid=giphy.gif",
         "message": "CONGRATS! YOU MADE IT!",
         "title": "Congratulations, you survived sign"
+    },
+    {
+        "id": 207,
+        "gif": "https://media2.giphy.com/media/l4hLHJCwpscYLkArm/giphy.gif?cid=ecf05e478vi5bchjnac30jdwvgnde6pu9t11jfc9osc87j6g&rid=giphy.gif",
+        "message": "YOU ROCKED THAT WORKOUT!",
+        "title": "Dwayne The Rock Johnson"
     }
 ]
