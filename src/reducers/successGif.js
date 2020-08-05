@@ -19,7 +19,6 @@ export default (state = {
             }
 
             const randomGif = shuffle(successMessage)
-            console.log(randomGif)
             return { ...state, successGif: randomGif }
 
         default:
