@@ -16,7 +16,10 @@ const useStyles = makeStyles((theme) => ({
     },
     time: {
         color: "#bdbdbd",
-        fontSize: "3rem"
+        fontSize: "3rem",
+        [theme.breakpoints.up('sm')]: {
+            fontSize: "4rem",
+        },
     }
 }))
 

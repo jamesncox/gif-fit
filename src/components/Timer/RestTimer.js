@@ -18,7 +18,10 @@ const useStyles = makeStyles((theme) => ({
     },
     time: {
         color: "#ce93d8",
-        fontSize: "3rem"
+        fontSize: "3rem",
+        [theme.breakpoints.up('sm')]: {
+            fontSize: "4rem",
+        },
     }
 }))
 
@@ -62,7 +65,7 @@ function RestTimer(props) {
             {counter === 2 ? playBeep() : null}
             {counter === 1 ? playBeep() : null} */}
             <Typography className={classes.header}>
-                Rest
+                REST
             </Typography>
             <Typography className={classes.time}>
                 :{counter.toString().padStart(2, '0')}
