@@ -1,6 +1,9 @@
 import React from 'react';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
-import { IS_ACTIVE_TRUE } from '../../actionTypes'
+import {
+    IS_ACTIVE_TRUE,
+    SET_SUCCESS_GIF
+} from '../../actionTypes'
 import Button from '@material-ui/core/Button';
 import { deepPurple } from '@material-ui/core/colors';
 import { connect } from 'react-redux';
@@ -34,6 +37,7 @@ function StartWorkout(props) {
 
     const handleClick = () => {
         props.isActiveTrue()
+        props.setSuccessGif()
     }
 
     return (
@@ -52,6 +56,7 @@ function StartWorkout(props) {
 
 const mapDispatchToProps = dispatch => ({
     isActiveTrue: () => dispatch({ type: IS_ACTIVE_TRUE }),
+    setSuccessGif: () => dispatch({ type: SET_SUCCESS_GIF })
 })
 
 export default connect(null, mapDispatchToProps)(StartWorkout)

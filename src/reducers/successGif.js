@@ -5,7 +5,7 @@ import {
 import successMessage from '../data/successMessage.json'
 
 export default (state = {
-    successGif: {}
+    successGif: []
 }, action) => {
     switch (action.type) {
 

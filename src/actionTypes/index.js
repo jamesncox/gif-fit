@@ -13,6 +13,9 @@ const EXCLUDE_DUMBBELLS = "EXCLUDE_DUMBBELLS"
 const IS_ACTIVE_TRUE = "IS_ACTIVE_TRUE"
 const IS_ACTIVE_FALSE = "IS_ACTIVE_FALSE"
 
+// Success Gif Message
+const SET_SUCCESS_GIF = "SET_SUCCESS_GIF"
+
 export {
     // Params
     SET_NUMBER_OF_EXERCISES,
@@ -28,4 +31,7 @@ export {
     // Is Active
     IS_ACTIVE_TRUE,
     IS_ACTIVE_FALSE,
+
+    // Success Gif Message
+    SET_SUCCESS_GIF
 }

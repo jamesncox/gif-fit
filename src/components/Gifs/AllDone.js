@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -15,31 +16,27 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     header: {
-        color: "#ba68c8"
+        color: "#7e57c2"
     },
     media: {
         height: 0,
         paddingTop: '56.25%'
     },
-    text: {
-        marginTop: theme.spacing(1),
-        color: "#ba68c8"
-    }
 }));
 
-export default function DisplayGif(props) {
+function AllDone(props) {
     const classes = useStyles();
 
     return (
         <Card className={classes.root} >
             <CardHeader
-                title="YOU DID IT!"
+                title={props.successGif[0].message}
                 className={classes.header}
             />
             <CardMedia
                 className={classes.media}
-                image={"https://media1.giphy.com/media/fdyZ3qI0GVZC0/giphy.gif?cid=ecf05e47juretdjwa883r97kifgq0589p0bch05camwk533k&rid=giphy.gif"}
-                title="Ron Swanson I'm really proud of you"
+                image={props.successGif[0].gif}
+                title={props.successGif[0].title}
             />
             <CardContent>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -49,3 +46,9 @@ export default function DisplayGif(props) {
         </Card >
     );
 }
+
+const mapStateToProps = state => ({
+    successGif: state.successGif.successGif
+})
+
+export default connect(mapStateToProps)(AllDone)
