@@ -16,8 +16,8 @@
 
 # Functionality To Do
 
-[] Add a select/filter button to include dumbbells in workouts if desired.
-[] Message for last move!
+[x] Add a select/filter button to include dumbbells in workouts if desired.
+[x] Message for last move!
 
 [x] Show which round the workout is currenly on. 
 
