@@ -40,5 +40,11 @@
         "gif": "https://media2.giphy.com/media/l4hLHJCwpscYLkArm/giphy.gif?cid=ecf05e478vi5bchjnac30jdwvgnde6pu9t11jfc9osc87j6g&rid=giphy.gif",
         "message": "YOU ROCKED THAT WORKOUT!",
         "title": "Dwayne The Rock Johnson"
+    },
+    {
+        "id": 208,
+        "gif": "https://media3.giphy.com/media/jPJz9s6VAqLLi/giphy.gif?cid=ecf05e477daf9061888edaa06c166cb63a017f1da797bc2d&rid=giphy.gif",
+        "message": "THAT WAS AWESOME!",
+        "title": "Chris Farley saying that was awesome"
     }
 ]
