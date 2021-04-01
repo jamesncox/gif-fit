@@ -1,8 +1,8 @@
-https://gif-fit.netlify.app/
-
-## Gif Fit
+# Gif Fit
 
 Gif Fit builds randomized workouts for you that you can do without any equipment in your home. 
+
+**Live Site:** [GIF FIT](https://gif-fit.netlify.app/)
 
 ![GIF-FIT](https://user-images.githubusercontent.com/47455758/113356938-b2940a80-9308-11eb-9c8c-51882a685611.jpg)
 
