@@ -13,3 +13,12 @@ Features a React front-end, Redux to manage state, and Material UI for styling.
 Gifs are sourced from Giphy.com (special thanks and credit to 8fit for uploading so many awesome exercises). 
 
 Made with love to genuinely help others during these stressful and challenging times.
+
+## How It's Made
+
+- React front-end
+- Redux to manage state
+- Material UI components and styles
+- React hooks useState and useEffect
+- Gifs sourced from Giphy.com (special thanks and credit to 8fit)
+- Made with love to genuinely help others during these stressful and challenging times
