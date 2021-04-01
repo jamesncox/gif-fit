@@ -16,8 +16,8 @@ Made with love to genuinely help others during these stressful and challenging t
 
 ## How It's Made
 
-- React front-end
-- Redux to manage state
+- React.js
+- Redux state management
 - Material UI components and styles
 - React hooks useState and useEffect
 - Gifs sourced from Giphy.com (special thanks and credit to 8fit)
