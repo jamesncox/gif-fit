@@ -22,3 +22,11 @@ Made with love to genuinely help others during these stressful and challenging t
 - React hooks useState and useEffect
 - Gifs sourced from Giphy.com (special thanks and credit to 8fit)
 - Made with love to genuinely help others during these stressful and challenging times
+
+## Run Locally
+
+1. In command line run 'git clone git@github.com:jamesncox/gif-fit.git'
+2. CD into 'gif-fit'
+4. Run 'yarn install'
+5. Run 'yarn start'
+6. Enjoy!
