@@ -23,6 +23,10 @@ Made with love to genuinely help others during these stressful and challenging t
 - Gifs sourced from Giphy.com (special thanks and credit to 8fit)
 - Made with love to genuinely help others during these stressful and challenging times
 
+## Lessons Learned
+
+- The timers were especially challenging. I had to figure out how to sync up the correct timers (start, workout and rest) with the array of exercise gifs, and have them cycle through each timer at the right time. I achieved this with multiple useEffects, based on user input for rest time, workout time, total number of rounds, etc. 
+
 ## Run Locally
 
 1. In command line run 'git clone git@github.com:jamesncox/gif-fit.git'
